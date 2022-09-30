@@ -2,7 +2,7 @@
 
 **IPPC 2022 Redesign**
 
-HTML &amp; CSS templates for the IPPC website’s 2022 redesign. 
+HTML &amp; CSS <a href="https://github.com/hypertexthero/ippcvi/tree/main/templates">templates</a> for the IPPC website’s 2022 redesign. 
 
 ## Things To Do
 
