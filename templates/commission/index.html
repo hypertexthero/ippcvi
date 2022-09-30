@@ -1,0 +1,1666 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="none">
+
+    <title>Commission - Templates - IPPC</title>
+    
+    <!-- Inter Typeface. We can host it ourselves (maybe preferred) or have Google host it (current implementation) =typeface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IPPC Theme -->
+    <link href="../css/ippc.css" rel="stylesheet">
+
+  </head>
+
+<!-- =body (ASCII art is the “Ogre” font at https://patorjk.com/software/taag/#p=display&f=Ogre)
+   ___           _       
+  / __\ ___   __| |_   _ 
+ /__\/// _ \ / _` | | | |
+/ \/  \ (_) | (_| | |_| |
+\_____/\___/ \__,_|\__, |
+                   |___/ 
+-->
+
+  <body id="commission">
+    <a id="top"></a>
+    <div class="crumbs">
+      <p>
+        <a href="../../index.html">IPPC Design Docs 2021–2022</a> &rarr; <a href="../">HTML &amp; CSS Templates</a> &rarr; Commission 
+        &nbsp;&nbsp;&nbsp;<em style="float:right;">Updated on 2022-05-28</em>
+      </p>
+    </div>
+    
+<!-- =header
+                      _           
+  /\  /\___  __ _  __| | ___ _ __ 
+ / /_/ / _ \/ _` |/ _` |/ _ \ '__|
+/ __  /  __/ (_| | (_| |  __/ |   
+\/ /_/ \___|\__,_|\__,_|\___|_|   
+
+-->
+    
+    <div class="container maincontainer shadow">
+      <div class="row">
+        <div class="col-md-12">
+          
+          <header>
+            <div class="row">
+              <div class="col-md-12">
+                <a href="#"><img id="faologo" src="../img/FAO_logo_Blue_3lines_en.svg" alt="FAO" class="d-inline-block"></a>
+                
+                <a href="#"><img id="ippclogo" src="../img/IPPC_logo_Green_3lines_en.svg" alt="IPPC" class="d-inline-block"></a>
+                
+                <form class="form-inline d-inline-block" id="searchform">
+                  <div class="form-row">
+                    <input class="form-control d-inline-block w-auto" type="text" placeholder="Search" aria-label="Search">
+                    <!-- <button class="btn btn-primary d-inline-block w-auto" type="submit">Go</button> -->
+                    <button class="btn btn-success d-inline-block w-auto"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="display: inline-block; vertical-align: middle;"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg></button>
+                  </div>
+                </form>
+                
+                <div class="utilities d-inline-block"> <!-- d-flex justify-content-end -->
+                  <div class="dropdown d-inline">
+                    <a class="btn btn-outline-success btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">العربية</a></li>
+                      <li><a class="dropdown-item" href="#">中文</a></li>
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">Français</a></li>
+                      <li><a class="dropdown-item" href="#">Русский</a></li>
+                      <li><a class="dropdown-item" href="#">Español</a></li>
+                    </ul>
+                  </div>&nbsp;
+                  <a href="#" class="d-inline-block text-success" role="button">FAQ</a>&nbsp;
+                  <a href="#" class="d-inline-block text-success" role="button">Login</a>
+                </div> <!-- end .utilities -->
+
+            </div> <!-- end .row -->
+          </header>
+          
+        </div> <!-- end .col-md-12 -->
+      </div> <!-- end .row -->
+
+<!-- =globalnav
+   ___ _       _           _                   
+  / _ \ | ___ | |__   __ _| |_ __   __ ___   __
+ / /_\/ |/ _ \| '_ \ / _` | | '_ \ / _` \ \ / /
+/ /_\\| | (_) | |_) | (_| | | | | | (_| |\ V / 
+\____/|_|\___/|_.__/ \__,_|_|_| |_|\__,_| \_/  
+
+Nota bene: For =nested =drop-down =menus, see here: https://bootstrap-menu.com/detail-multilevel.html
+
+-->
+
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark shadow" aria-label="Global navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Standards</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="commission-dd" data-bs-toggle="dropdown" aria-current="page" aria-expanded="false">Commission</a>
+            <ul class="dropdown-menu" aria-labelledby="commission-dd">
+              <li><a class="dropdown-item" href="#">The Commission on Phytosanitary Measures</a></li>
+              <li><a class="dropdown-item active" href="#">CPM-16</a></li>
+              <li><a class="dropdown-item" href="#">Another page</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Committees</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Countries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Core Activites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Consultations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News &amp; Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- =breadcrumbs
+   ___                    _                           _         
+  / __\_ __ ___  __ _  __| | ___ _ __ _   _ _ __ ___ | |__  ___ 
+ /__\// '__/ _ \/ _` |/ _` |/ __| '__| | | | '_ ` _ \| '_ \/ __|
+/ \/  \ | |  __/ (_| | (_| | (__| |  | |_| | | | | | | |_) \__ \
+\_____/_|  \___|\__,_|\__,_|\___|_|   \__,_|_| |_| |_|_.__/|___/
+                                                                
+-->
+          
+          <div class="row">
+            <div class="col-md-auto">
+              <p class="breadcrumbs"><a href="../../index.html">Home</a> &rarr; Commission</p>
+            </div>
+          </div>
+      
+<!-- =content
+   ___            _             _   
+  / __\___  _ __ | |_ ___ _ __ | |_ 
+ / /  / _ \| '_ \| __/ _ \ '_ \| __|
+/ /__| (_) | | | | ||  __/ | | | |_ 
+\____/\___/|_| |_|\__\___|_| |_|\__|
+
+ -->
+
+      <div class="row">
+        <div class="col-md-7">
+          
+          <h1>CPM 16</h1>
+          
+                   <p>The Director-General of the Food and Agriculture Organization of the United Nations (FAO) extended an invitation to attend the 16th Session of the Commission on Phytosanitary Measures (CPM-16). The Session will be held virtually on <strong>5, 7 and 21 April 2022</strong> from <strong>10:00 AM to 12:30 PM (CET)</strong> and from <strong>2:00 to 4:30 PM (CET)</strong>. </p>
+          <p><strong><u>Registration</u></strong> will be held via the <a href="https://www.fao.org/members-gateway/home/en/">FAO Members Gateway</a> for IPPC contracting parties, while CPM observers may register by submitting an email to <a href="mailto:ippc@fao.org">ippc@fao.org</a>. IPPC contracting parties are also requested to submit their credentials to <a href="mailto:ippc@fao.org">ippc@fao.org</a>. An example of credentials can be found <a href="https://www.ippc.int/en/publications/89464/">here</a>.</p>
+          <p>Upon registration, participants will receive a <u>personalized Zoom link</u> to attend CPM-16, which will remain the same for all sessions, including the dry-run sessions taking place on 4 April 2022 from 9:00 to 10:00 am (CET) and from 6:00 to 7:00 pm (CET).</p>
+          <p>The Session will be conducted in Arabic, Chinese, English, French, Russian and Spanish.
+          CPM-16 meeting papers are posted below.</p>
+          <p><strong>CPM -16 webcast sessions:</strong></p>
+          <p><strong>Session 1</strong> – <a href="https://www.fao.org/webcast/home/en/item/5780/icode/">https://www.fao.org/webcast/home/en/item/5780/icode/</a></p>
+          <p><strong>Session 2</strong> – <a href="https://www.fao.org/webcast/home/en/item/5781/icode/">https://www.fao.org/webcast/home/en/item/5781/icode/</a></p>
+          <p><strong>Session 3</strong> – <a href="https://www.fao.org/webcast/home/en/item/5782/icode/">https://www.fao.org/webcast/home/en/item/5782/icode/</a></p>
+          <p><strong>Session 4</strong> – <a href="https://www.fao.org/webcast/home/en/item/5783/icode/">https://www.fao.org/webcast/home/en/item/5783/icode/</a></p>
+          <p><strong>Session 5</strong> – <a href="https://www.fao.org/webcast/home/en/item/5784/icode/">https://www.fao.org/webcast/home/en/item/5784/icode/</a></p>
+          <p><strong>Session 6</strong> - <a href="https://www.fao.org/webcast/home/en/item/5785/icode/">https://www.fao.org/webcast/home/en/item/5785/icode/</a></p>
+            
+        </div> <!-- end .col-md-7 -->
+<!-- =sidebar
+ __ _     _      _                
+/ _(_) __| | ___| |__   __ _ _ __ 
+\ \| |/ _` |/ _ \ '_ \ / _` | '__|
+_\ \ | (_| |  __/ |_) | (_| | |   
+\__/_|\__,_|\___|_.__/ \__,_|_|   
+
+ -->
+
+        <div class="col-md-5" id="sidebar">
+          <img id="image" class="sidebar-featured-img img-fluid rounded shadow-sm" src="../img/Giovanna_Garzoni_(Italian)_-_Still_Life_with_Bowl_of_Citrons.jpg" alt="Color painting of a bowl of citrus with fly.">
+          <p class="mt-2 mb-4"><em>Still Life with Bowl of Citrons, Giovanna Garzoni, late 1640s.</em></p>
+
+          <h2>CPM Sessions</h2>
+  
+          <p>The IPPC is governed by the Commission on Phytosanitary Measures (CPM), which was established under Article XII of the New Revised Text of the IPPC, approved in 1997, and serves as the Convention s governing body. The CPM meets during March or April each year to promote cooperation of contracting parties and relevant stakeholders to help implement the <a href="">objectives of the IPPC</a>.</p>
+
+        </div>  <!-- end .col-md-3 sidebar -->
+      </div> <!-- end .row -->
+
+      <div class="row">
+        <div class="col-md-12" id="content">
+          <hr>
+          <h2>CPM 16 Documents</h2>
+          
+          <form class="form-inline d-inline-block" id="tablefilterform" name="tablefilterform">
+              <input class="form-control d-inline-block w-auto" type="text" placeholder="Type to filter table contents" aria-label="Type to filter table contents"> 
+          </form>
+            
+          <table class="table table-hover table-striped table-sm dataTable" id="publications" style="margin-top: 10px;" aria-describedby="publications_info">
+            <thead>
+              <tr role="row">
+                <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="publications" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Document #: activate to sort column descending">
+                  Document #
+                </th>
+                <th class="sorting" role="columnheader" tabindex="0" aria-controls="publications" rowspan="1" colspan="1" aria-label="Agenda # : activate to sort column ascending">
+                  Agenda #
+                </th>
+                <th class="sorting" role="columnheader" tabindex="0" aria-controls="publications" rowspan="1" colspan="1" aria-label="Title: activate to sort column ascending">
+                  Title
+                </th>
+                <th class="sorting" role="columnheader" tabindex="0" aria-controls="publications" rowspan="1" colspan="1" aria-label="Files: activate to sort column ascending" style="width:300px;">
+                  Files
+                </th>
+                <th class="sorting" role="columnheader" tabindex="0" aria-controls="publications" rowspan="1" colspan="1" aria-label="Publication Date: activate to sort column ascending">
+                  Publication Date
+                </th>
+              </tr>
+            </thead>
+            <tbody role="alert" aria-live="polite" aria-relevant="all">
+              <tr id="media-file-90655">
+                <td class="sorting_1"></td>
+                <td></td>
+                <td>
+                  <a href="/en/publications/90655/">IPPC Secretariat's invitation Letter to CPM-16</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/01/CPM-16_Invitation_Letter_EN.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/01/CPM-16_Invitation_Letter_Es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/01/CPM-16_Invitation_Letter_Fr.pdf">Fr</a>
+                </td>
+                <td>
+                  27 Jan 2022
+                </td>
+              </tr>
+              <tr id="media-file-90361">
+                <td class="sorting_1"></td>
+                <td></td>
+                <td>
+                  <a href="/en/publications/90361/">Deputy Director-General letter regarding the CPM-16 poll</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2021/10/CPM_letters_ConsensusVirtualMeeting_DDG_CPM16-2021-10-19.pdf">En</a>
+                </td>
+                <td>
+                  20 Oct 2021
+                </td>
+              </tr>
+              <tr id="media-file-91018">
+                <td class="sorting_1"></td>
+                <td></td>
+                <td>
+                  <a href="/en/publications/91018/">CPM-16 DRAFT REPORT</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/04/CPM-16_Draft_Report_Consolidated_2022-04-12.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/04/NI761_CPM-16_DRAFT_REPORT_Compiled_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/04/NI761_CPM-16_DRAFT_REPORT_Compiled_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/04/NI761_CPM-16_DRAFT_REPORT_Compiled_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/04/NI761_CPM-16_Draft_Report_compiled_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/04/NI761_CPM-16_DRAFT_REPORT_Compiled_zh.pdf">Zh</a>
+                </td>
+                <td></td>
+              </tr>
+              <tr id="media-file-91132">
+                <td class="sorting_1"></td>
+                <td></td>
+                <td>
+                  <a href="/en/publications/91132/">CPM-16 Participants List</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/05/CPM_16_Participants_List__2022.pdf">En</a>
+                </td>
+                <td>
+                  22 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-91228">
+                <td class="sorting_1"></td>
+                <td></td>
+                <td>
+                  <a href="/en/publications/91228/">Draft Part 3 of the CPM-16 Report</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/05/CPM-16_Draft_Report_2026-04-26_Part3_En_Cleared.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/05/CPM-16_Draft_Report_2026-04-26_Part3_Es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/05/NJ079_CPM-16_Draft_Report_2026-04-26_Part3_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/05/NJ079_CPM-16_Draft_Report_2026-04-26_Part3_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/05/NJ079_CPM-16_Draft_Report_2026-04-26_Part3_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/05/NJ079_CPM-16_Draft_Report_2026-04-26_Part3_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  18 May 2022
+                </td>
+              </tr>
+              <tr id="media-file-91411">
+                <td class="sorting_1"></td>
+                <td></td>
+                <td>
+                  <a href="/en/publications/91411/">CPM-16 FINAL REPORT</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/07/CPM-16_FINAL_REPORT-2022-07-20__Syh4mHt.pdf">En</a>
+                  <a href="https://assets.ippc.int/static/media/files/publication/es/2022/08/NJ835_CPM_16_Final_Report_es_4H9llQF.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/08/NJ835_CPM_16_Final_Report_fr_fsH0ov6.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/08/NJ835_CPM_16_Final_Report_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/08/NJ835_CPM_16_Final_Report_ar_yhAIDYe.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/08/NJ835_CPM_16_Final_Report_zh_hJPsmXI.pdf">Zh</a>
+                </td>
+                <td>
+                  20 Jul 2022
+                </td>
+              </tr>
+              <tr id="media-file-90598">
+                <td class="sorting_1">
+                  CPM 2022/01
+                </td>
+                <td>
+                  03
+                </td>
+                <td>
+                  <a href="/en/publications/90598/">Provisional agenda</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/01/01_CPM_2022_Provisional_Agenda-2021-12-15.pdf">En</a>
+                </td>
+                <td>
+                  10 Jan 2022
+                </td>
+              </tr>
+              <tr id="media-file-90599">
+                <td class="sorting_1">
+                  CPM 2022/02
+                </td>
+                <td>
+                  03
+                </td>
+                <td>
+                  <a href="/en/publications/90599/">Detailed agenda</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/01/02_CPM_2022_DetailedAg-2022-01-10.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI045_CPM_2022_02_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/NI045_CPM_2022_02_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI045_CPM-16_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/NI045_CPM_2022_02_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI045_CPM_2022_02_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  10 Jan 2022
+                </td>
+              </tr>
+              <tr id="media-file-90610">
+                <td class="sorting_1">
+                  CPM 2022/03
+                </td>
+                <td>
+                  17.2
+                </td>
+                <td>
+                  <a href="/en/publications/90610/">Update on the 2021 IPPC Regional Workshops</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/03_CPM_2022_RegionalWorkshops-2022-01-19.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI106_CPM_2022_03_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI106_CPM_2022_03_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI106_CPM_2022_03_ru_PdP6iHt.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/NI106_CPM_2022_03_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI106_CPM_2022_03_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  16 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90600">
+                <td class="sorting_1">
+                  CPM 2022/04
+                </td>
+                <td>
+                  08.6
+                </td>
+                <td>
+                  <a href="/en/publications/90600/">Adoption of the revision of the Implementation and Capacity Development Committee Terms of Reference and Rules of Procedure</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/04_CPM_2022_IC_TOR_ROP_Rev-2022-02-22.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI046_CPM_2022_04_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/NI046_CPM_2022_04_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI046_CPM_2022_04_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/NI046_CPM_2022_04_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI046_CPM_2022_04_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  22 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90601">
+                <td class="sorting_1">
+                  CPM 2022/05
+                </td>
+                <td>
+                  08.4
+                </td>
+                <td>
+                  <a href="/en/publications/90601/">IPPC Dispute Settlement Procedures- revision</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/04/05_CPM-16_2022_IPPC_DSP_2021-01-06_1.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI047_CPM_2022_05_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/04/NI047_CPM_2022_05_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI047_CPM_2022_05_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI047_CPM_2022_05_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/04/NI047_CPM_2022_05_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  10 Jan 2022
+                </td>
+              </tr>
+              <tr id="media-file-90615">
+                <td class="sorting_1">
+                  CPM 2022/06
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  <a href="/en/publications/90615/">CPM recommendations</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/01/06_CPM-16_2022_CPM_Recommendations_body-2022-01-24.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI133_CPM_2022_06_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/NI133_CPM_2022_06_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI133_CPM_2022_06_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/NI133_CPM_2022_06_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI133_CPM_2022_06_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  28 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90614">
+                <td class="sorting_1">
+                  CPM 2022/06_01
+                </td>
+                <td>
+                  10.1
+                </td>
+                <td>
+                  <a href="/en/publications/90614/">CPM Draft recommendation - Reduction of the incidence of contaminating pests associated with regulated and unregulated articles to protect plant resources and facilitate safe trade (2019-002)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/01/06_01_CPM_2022_ANNEX1_Draft_CPM_Rec_Contaminating_pests__2022-01-24.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/04/NI258_CPM_2022_06_01_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI258_CPM_2022_06_01_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI258_CPM_2022_06_01_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI258_CPM_2022_06_01_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI258_CPM_2022_06_01_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  28 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90629">
+                <td class="sorting_1">
+                  CPM 2022/07
+                </td>
+                <td>
+                  11.6
+                </td>
+                <td>
+                  <a href="/en/publications/90629/">Projects managed by the IPPC Secretariat</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/07_CPM_2022_Projects-2022-01-24.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI141_CPM_2022_07_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI141_CPM_2022_07_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI141_CPM_2022_07_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/04/NI141_CPM_2022_07_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI141_CPM_2022_07_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  01 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90630">
+                <td class="sorting_1">
+                  CPM 2022/08
+                </td>
+                <td>
+                  18.3
+                </td>
+                <td>
+                  <a href="/en/publications/90630/">Membership and Potential Replacements for Implementation and Capacity Development Committee</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/08_CPM_2022_IC_Membership-2022-01-24.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI142_CPM_2022_08_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/04/NI142_CPM_2022_08_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI142_CPM_2022_08_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI142_CPM_2022_08_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI142_CPM_2022_08_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  21 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90631">
+                <td class="sorting_1">
+                  CPM 2022/09
+                </td>
+                <td>
+                  08.3
+                </td>
+                <td>
+                  <a href="/en/publications/90631/">Framework for Standards and Implementation</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/01/09_CPM_2022_Framework_Stds_Implementation-2022-01-24.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/02/NI143_CPM_2022_09_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI143_CPM_2022_09_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI143_CPM_2022_09_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI143_CPM_2022_09_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI143_CPM_2022_09_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  25 Jan 2022
+                </td>
+              </tr>
+              <tr id="media-file-90645">
+                <td class="sorting_1">
+                  CPM 2022/10
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  <a href="/en/publications/90645/">Update on the emerging pests activities</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/10_CPM_2022_Emergingpest-2022-02-21.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI144_CPM_2022_10_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI144_CPM_2022_10_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI144_CPM_2022_10_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI144_CPM_2022_10_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI144_CPM_2022_10_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  25 Jan 2022
+                </td>
+              </tr>
+              <tr id="media-file-90653">
+                <td class="sorting_1">
+                  CPM 2022/11
+                </td>
+                <td>
+                  11.1
+                </td>
+                <td>
+                  <a href="/en/publications/90653/">Report of the Implementation and Capacity Development Committee</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/03/11_CPM_2022_IC_Report-2022-03-01.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI151_CPM_2022_11_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI151_CPM_2022_11_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI151_CPM_2022_11_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI151_CPM_2022_11_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI151_CPM_2022_11_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  01 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90657">
+                <td class="sorting_1">
+                  CPM 2022/12
+                </td>
+                <td>
+                  11.2
+                </td>
+                <td>
+                  <a href="/en/publications/90657/">National Reporting Obligations - Summary of the NRO 2021 activities and 2022 work plan</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/12_CPM_2022_NRO-2022-02-09.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI157_CPM_2022_12_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/NI157_CPM_2022_12_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI157_CPM_2022_12_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/NI157_CPM_2022_12_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI157_CPM_2022_12_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  27 Jan 2022
+                </td>
+              </tr>
+              <tr id="media-file-90658">
+                <td class="sorting_1">
+                  CPM 2022/13
+                </td>
+                <td>
+                  08.5
+                </td>
+                <td>
+                  <a href="/en/publications/90658/">The IPPC Secretariat and One Health</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/13_CPM_2022_OneHealth-2022-01-27.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI155_CPM_2022_13_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/NI155_CPM_2022_13_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI155_CPM_2022_13_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI155_CPM_2022_13_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI155_CPM_2022_13_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  27 Jan 2022
+                </td>
+              </tr>
+              <tr id="media-file-90659">
+                <td class="sorting_1">
+                  CPM 2022/14
+                </td>
+                <td>
+                  08.8.3
+                </td>
+                <td>
+                  <a href="/en/publications/90659/">Update from the CPM Focus Group: Climate Change and Phytosanitary issues</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/14_CPM_2022_FG_CCPI_Update-2022-01-31.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI231_CPM_2022_14_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI231_CPM_2022_14_Body_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI231_CPM_2022_14_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/04/NI231_CPM_2022_14_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI231_CPM_2022_14_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  01 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90909">
+                <td class="sorting_1">
+                  CPM 2022/15
+                </td>
+                <td>
+                  15.1
+                </td>
+                <td>
+                  <a href="/en/publications/90909/">Update on the first International Plant Health Conference</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/03/15_CPM_2022_IPHC-2022-03-22.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/04/NI232Rev1_CPM_2022_15_REV1_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/04/NI232Rev1_CPM_2022_15_REV1_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/04/NI232Rev1_CPM_2022_15_REV1_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/04/NI232Rev1_CPM_2022_15_REV1_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/04/NI232Rev1_CPM_2022_15_REV1_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  22 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90661">
+                <td class="sorting_1">
+                  CPM 2022/16
+                </td>
+                <td>
+                  15.2
+                </td>
+                <td>
+                  <a href="/en/publications/90661/">Update on International Day of Plant Health</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/16_CPM_2022_IDPH-2022-02-01.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI233_16_CPM_2022_IDPH_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI233_16_CPM_2022_IDPH_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI233_16_CPM_2022_IDPH_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI233_16_CPM_2022_IDPH_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI233_16_CPM_2022_IDPH_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  01 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90662">
+                <td class="sorting_1">
+                  CPM 2022/17
+                </td>
+                <td>
+                  08.1
+                </td>
+                <td>
+                  <a href="/en/publications/90662/">Report from Strategic Planning Group</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/17_CPM_2022_SPG_Report-2022-02-01.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI234_CPM_2022_17_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI234_CPM_2022_17_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI234_CPM_2022_17_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI234_CPM_2022_17_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/02/NI234_CPM_2022_17_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  01 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90663">
+                <td class="sorting_1">
+                  CPM 2022/18
+                </td>
+                <td>
+                  09.2
+                </td>
+                <td>
+                  <a href="/en/publications/90663/">Adoption of International Standards for Phytosanitary Measures (ISPMs) - Proposed ink amendments to adopted ISPMS</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/18_CPM_2022_InkAmendments_ISPM-05-Term-Definition-2022-02-01.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI262_CPM_2022_18_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI262_CPM_2022_18_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI262_CPM_2022_18_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI262_CPM_2022_18_ar_pV66NEN.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI262_CPM_2022_18_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  28 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90670">
+                <td class="sorting_1">
+                  CPM 2022/19
+                </td>
+                <td>
+                  08.2
+                </td>
+                <td>
+                  <a href="/en/publications/90670/">CPM authorization for the CPM Bureau to operate on its behalf until CPM-17, 2023</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/19_CPM_2022_RoleCPMBureau__duringemergencies-2022-02-02.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI235_CPM_2022_19_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI235_CPM_2022_19_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI235_CPM_2022_19_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI235_CPM_2022_19_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI235_CPM_2022_19_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  02 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90671">
+                <td class="sorting_1">
+                  CPM 2022/20
+                </td>
+                <td>
+                  11.4
+                </td>
+                <td>
+                  <a href="/en/publications/90671/">Phytosanitary Capacity Evaluations - Activities in 2021</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/20_CPM_2022_PCE_2022-02-02.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI236_CPM_2022_20_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI236_CPM_2022_20_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI236_CPM_2022_20_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/NI236_CPM_2022_20_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI236_CPM_2022_20_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  02 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90672">
+                <td class="sorting_1">
+                  CPM 2022/21
+                </td>
+                <td>
+                  09.3
+                </td>
+                <td>
+                  <a href="/en/publications/90672/">Standards Committee recommendations to the CPM - Adjustments to the Standard Setting Process to facilitate the development of phytosanitary treatments</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/21_CPM_2022_CPM_PTDevelopmentProcess-2022-02-02docx.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI237_CPM_2022_21_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI237_CPM_2022_21_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI237_CPM_2022_21_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI237_CPM_2022_21_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI237_CPM_2022_21_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  28 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90673">
+                <td class="sorting_1">
+                  CPM 2022/22
+                </td>
+                <td>
+                  09.3
+                </td>
+                <td>
+                  <a href="/en/publications/90673/">Standards Committee recommendations to the CPM - Adoption of the List of topics for IPPC standards</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/22_CPM_2022_RecommendationsToCPM_LOT-2022-02-02.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI238_CPM_2022_25_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI238_CPM_2022_25_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI238_CPM_2022_25_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI238_CPM_2022_25_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI238_CPM_2022_25_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  04 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90674">
+                <td class="sorting_1">
+                  CPM 2022/23
+                </td>
+                <td>
+                  09.3
+                </td>
+                <td>
+                  <a href="/en/publications/90674/">Standards Committee recommendations to the CPM - Discussions on the topic “Food and other humanitarian aid in phytosanitary context” and a proposal for the establishment of a CPM Focus Group</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/23_CPM_2022_SCRecomendations_SafeProvision_FoodHumanitarian_Aid-2022-02-02.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI239_CPM_2022_23_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI239_CPM_2022_23_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI239_CPM_2022_23_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/NI239_CPM_2022_23_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI239_CPM_2022_23_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  28 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90689">
+                <td class="sorting_1">
+                  CPM 2022/24
+                </td>
+                <td>
+                  09.2
+                </td>
+                <td>
+                  <a href="/en/publications/90689/">Adoption of International Standards for Phytosanitary Measures (ISPMs)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/24_CPM_2022_AdoptionISPMs_NotingDPs_LRGS_AcknowledgementExperts-2022-02-03_MQDbVIh.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/04/NI263_CPM_2022_24_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI263_CPM_2022_24_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI263_CPM_2022_24_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI263_CPM_2022_24_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI263_CPM_2022_24_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  01 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90704">
+                <td class="sorting_1">
+                  CPM 2022/24_01
+                </td>
+                <td>
+                  09.2
+                </td>
+                <td>
+                  <a href="/en/publications/90704/">Draft ISPM: Commodity-specific standards for phytosanitary measures (2019-008)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/2019-008_DraftISPM_CommodityStandards_En_2022-02.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/02/2019-008_DraftISPM_CommodityStandards_Es_2022-02.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/2019-008_DraftISPM_CommodityStandards_Fr_2022-02.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/2019-008_DraftISPM_CommodityStandards_Ru_2022-02.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/2019-008_DraftISPM_CommodityStandards_Ar_2022-02_ZrzEhLm.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/02/2019-008_DraftISPM_CommodityStandards_Zh_2022-02.pdf">Zh</a>
+                </td>
+                <td>
+                  08 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90705">
+                <td class="sorting_1">
+                  CPM 2022/24_02
+                </td>
+                <td>
+                  09.2
+                </td>
+                <td>
+                  <a href="/en/publications/90705/">Draft ISPM: Audit in the phytosanitary context (2015-014)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/2015-014_DraftISPM_Audit_En_2022-02.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/2015-014_DraftISPM_Audit_Sp_2022-03.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/ND082Rev1_AUDIT_IN_THE_PHYTOSANITARY_CONTEXT_2015-014_REV1_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/2015-014_DraftISPM_Audit_Ru_2022-02.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/2015-014_DraftISPM_Audit_Ar_2022-02_7zdydWy.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/02/2015-014_DraftISPM_Audit_Zh_2022-02.pdf">Zh</a>
+                </td>
+                <td>
+                  11 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90706">
+                <td class="sorting_1">
+                  CPM 2022/24_03
+                </td>
+                <td>
+                  09.2
+                </td>
+                <td>
+                  <a href="/en/publications/90706/">Draft ISPM: Focused revision of ISPM 12 (Phytosanitary certificates) in relation to re-export (2015-011)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/2015-011_DRAFT_ISPM12_FOCUSED_REVISION_En.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/ND095Rev1_DRAFT_ISPM_-_FOCUSED_REVISION_OF_ISPM_12_REV1_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/2015-011_DRAFT_ISPM12_FOCUSED_REVISION_Fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/ND095Rev1_DRAFT_ISPM_-_FOCUSED_REVISION_OF_ISPM_12_REV1_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/2015-011_DRAFT_ISPM12_FOCUSED_REVISION_Ar_ucGqa4A.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/02/2015-011_DRAFT_ISPM12_FOCUSED_REVISION_Zh.pdf">Zh</a>
+                </td>
+                <td>
+                  21 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90707">
+                <td class="sorting_1">
+                  CPM 2022/24_04
+                </td>
+                <td>
+                  09.2
+                </td>
+                <td>
+                  <a href="/en/publications/90707/">Draft 2019 and 2020 amendments to ISPM 5 (Glossary of phytosanitary terms) (1994-001)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/1994-001_DRAFT_ISPM5_Amendment-2019-2020_En.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/19E8011.PDF">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/1994-001_DRAFT_ISPM5_Amendment-2019-2020_Fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/1994-001_DRAFT_ISPM5_Amendment-2019-2020_Ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/1994-001_DRAFT_ISPM5_Amendment-2019-2020_Ar_Todqkm8.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/ND085Rev1_DRAFT_ISPM_1994-001_REV1_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  11 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90712">
+                <td class="sorting_1">
+                  CPM 2022/24_05
+                </td>
+                <td>
+                  09.2
+                </td>
+                <td>
+                  <a href="/en/publications/90712/">Draft Annex to ISPM 28: Irradiation treatment for Tortricidae on fruits (2017-011)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/2017-011_DRAFT_PT_Irradiation_treatment_Tortricidae_on_fruits_En_2022.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/20473F1.PDF">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/2017-011_DRAFT_PT_Irradiation_treatment_Tortricidae_on_fruits_Fr_2022.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/2017-011_DRAFT_PT_Irradiation_treatment_Tortricidae_on_fruits_Ru_2022.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/2017-011_DRAFT_PT_Irradiation_treatment_Tortricidae_on_fruits_Ar_2022.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/02/2017-011_DRAFT_PT_Irradiation_treatment_Tortricidae_on_fruits_Zh_2022.pdf">Zh</a>
+                </td>
+                <td>
+                  11 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90711">
+                <td class="sorting_1">
+                  CPM 2022/24_06
+                </td>
+                <td>
+                  09.2
+                </td>
+                <td>
+                  <a href="/en/publications/90711/">Draft Annex to ISPM 28: Cold treatment for Bactrocera zonata on Citrus sinensis (2017-013)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/2017-013_DRAFT_PT_Bactrocera_onCsinensis_En_2022.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/2036721.PDF">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/2017-013_DRAFT_PT_Bactrocera_onCsinensis_Fr_2022.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/2017-013_DRAFT_PT_Bactrocera_onCsinensis_RU_2022.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/2017-013_DRAFT_PT_Bactrocera_onCsinensis_Ar_2022.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/02/2017-013_DRAFT_PT_Bactrocera_onCsinensis_Zh_2022.pdf">Zh</a>
+                </td>
+                <td>
+                  11 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90710">
+                <td class="sorting_1">
+                  CPM 2022/24_07
+                </td>
+                <td>
+                  09.2
+                </td>
+                <td>
+                  <a href="/en/publications/90710/">Draft Annex to ISPM 28: Irradiation treatment for Zeugodacus tau (2017-025)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/2017-025_DRAFT_PT_Zeugodacus_En_2022.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/207D2A1.PDF">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/2017-025_DRAFT_PT_Zeugodacus_Fr_2022.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/2017-025_DRAFT_PT_Zeugodacus_Ru_2022.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/2017-025_DRAFT_PT_Zeugodacus_Ar_2022.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/02/2017-025_DRAFT_PT_Zeugodacus_Zh_2022.pdf">Zh</a>
+                </td>
+                <td>
+                  11 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90709">
+                <td class="sorting_1">
+                  CPM 2022/24_08
+                </td>
+                <td>
+                  09.2
+                </td>
+                <td>
+                  <a href="/en/publications/90709/">Draft Annex to ISPM 28: Irradiation treatment for Sternochetus frigidus (2017-036)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/2017-036_DRAFT_PT_Irradiation_Treatment_For_Sternochetus_Frigidus_En.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/20BE281.PDF">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/2017-036_DRAFT_PT_Irradiation_Treatment_For_Sternochetus_Frigidus_Fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/2017-036_DRAFT_PT_Irradiation_Treatment_For_Sternochetus_Frigidus_Ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/2017-036_DRAFT_PT_Irradiation_Treatment_For_Sternochetus_Frigidus_Ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/02/2017-036_DRAFT_PT_Irradiation_Treatment_For_Sternochetus_Frigidus_Zh.pdf">Zh</a>
+                </td>
+                <td>
+                  11 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90708">
+                <td class="sorting_1">
+                  CPM 2022/24_09
+                </td>
+                <td>
+                  09.2
+                </td>
+                <td>
+                  <a href="/en/publications/90708/">Draft Annex to ISPM 28: Vapour heat - modified atmosphere treatment for C. Pomonella and G. molesta on M. pumila and P. persica (2017-037 and 2017-038)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/2017-037_2017-038_DRAFT_PT__Vapourheat_modified_atmosphere_treatment_En_2022.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/20BCB91.PDF">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/02/2017-037_2017-038_DRAFT_PT__Vapourheat_modified_atmosphere_treatment_Fr_2022_uSFqu3b.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/2017-037_2017-038_DRAFT_PT__Vapourheat_modified_atmosphere_treatment_Ru_2022_TSW5CjR.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/02/2017-037_2017-038_DRAFT_PT__Vapourheat_modified_atmosphere_treatment_Ar_2022.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/02/2017-037_2017-038_DRAFT_PT__Vapourheat_modified_atmosphere_treatment_Zh_2022_oy8LVWx.pdf">Zh</a>
+                </td>
+                <td>
+                  11 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90675">
+                <td class="sorting_1">
+                  CPM 2022/25
+                </td>
+                <td>
+                  18.2
+                </td>
+                <td>
+                  <a href="/en/publications/90675/">Membership and Potential Replacements for CPM Standards Committee</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/25_CPM-16_2022_SC_MembersPotentialReplacements-2022-02-02.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI240_CPM_2022_25_SC_MembersPotential_Replacements_Body_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI240_CPM_2022_25_SC_MembersPotential_Replacements_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI240_25_CPM-16_2022_SC_MembersPotential_Replacements_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/04/NI240_CPM_2022_25_SC_MembersPotential_Replacements_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI240_CPM_2022_25_SC_MembersPotential_Replacements_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  04 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90676">
+                <td class="sorting_1">
+                  CPM 2022/26
+                </td>
+                <td>
+                  11.5
+                </td>
+                <td>
+                  <a href="/en/publications/90676/">Implementation, Review and Support System - Options for transitioning to more sustainable system</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/26_CPM_2022_IRSS-2022-02-23.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI255_26_CPM_2022_IRSS_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI255_26_CPM_2022_IRSS_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI255_26_CPM_2022_IRSS_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI255_26_CPM_2022_IRSS_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI255_26_CPM_2022_IRSS_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  03 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90677">
+                <td class="sorting_1">
+                  CPM 2022/27
+                </td>
+                <td>
+                  08.7
+                </td>
+                <td>
+                  <a href="/en/publications/90677/">Recommendations from the Task Force on Topics from the IPPC 2021 Call for Topics: Standards and Implementation - TFT recommendations to CPM-16 for the 2021 Call for Topics submissions</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/27_CPM_2022_TFT_recommendations_to_CPM-2022-02-03.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/04/NI256_27_CPM_2022_TFT_recommendations_to_CPM_Compile_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI256_27_CPM_2022_TFT_recommendations_to_CPM_Compile_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI256_27_CPM_2022_TFT_recommendations_to_CPM_Compile_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI256_27_CPM_2022_TFT_recommendations_to_CPM_Compile_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI256_27_CPM_2022_TFT_recommendations_to_CPM_Compile_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  04 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90697">
+                <td class="sorting_1">
+                  CPM 2022/28
+                </td>
+                <td>
+                  12.2
+                </td>
+                <td>
+                  <a href="/en/publications/90697/">2022 IPPC Secretariat Work Plan and Budget</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/28_CPM_2022_WorkplanBudget_for2022-2022-02-4.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI265_CPM_2022_28_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI265_CPM_2022_28_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI265_CPM_2022_28_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI265_CPM_2022_28_Body_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI265_CPM_2022_28_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  04 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90688">
+                <td class="sorting_1">
+                  CPM 2022/29
+                </td>
+                <td>
+                  16.1
+                </td>
+                <td>
+                  <a href="/en/publications/90688/">Update on international cooperation</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/29_CPM-16_2022_InternationalCooperationReports-2022-02-21.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI257_CPM_2022_29_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI257_CPM_2022_29_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI257_CPM_2022_29_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI257_CPM_2022_29_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI257_CPM_2022_29_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  21 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90696">
+                <td class="sorting_1">
+                  CPM 2022/30
+                </td>
+                <td>
+                  09.1
+                </td>
+                <td>
+                  <a href="/en/publications/90696/">Report from Standards Committee - SC activities</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/30_CPM_2022_Report_SC_Activities-_2022-02-04.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI267_30_CPM_2022_Report_SC_Activities_Compile_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI267_30_CPM_2022_Report_SC_Activities_Compile_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI267_30_CPM_2022_Report_SC_Activities_Compile_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI267_30_CPM_2022_Report_SC_Activities_Compile_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI267_30_CPM_2022_Report_SC_Activities_Compile_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  07 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90713">
+                <td class="sorting_1">
+                  CPM 2022/31
+                </td>
+                <td>
+                  08.8.6
+                </td>
+                <td>
+                  <a href="/en/publications/90713/">Proposed establishment and draft TOR CPM Focus Group on Sea Containers</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/31_CPM_2022_CPMFG_SeaContainer_TORs-2022-02-09.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/04/NI337_CPM_2021_31_CPMFG_SeaContainer_TORs_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI337_CPM_2021_31_CPMFG_SeaContainer_TORs_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/02/NI337_CPM_2021_31_CPMFG_SeaContainer_TORs_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI337_CPM_2021_31_CPMFG_SeaContainer_TORs_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI337_CPM_2021_31_CPMFG_SeaContainer_TORs_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  01 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90714">
+                <td class="sorting_1">
+                  CPM 2022/32
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  <a href="/en/publications/90714/">Update on ePhyto activities</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/32_CPM_2022_Update_ePhytoActivities-2022-02-09.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI338_CPM_2022_32_Update_ePhytoActivities_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI338_CPM_2022_32_Update_ePhytoActivities_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI338_CPM_2022_32_Update_ePhytoActivities_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI338_CPM_2022_32_Update_ePhytoActivities_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI338_CPM_2022_32_Update_ePhytoActivities_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  09 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90718">
+                <td class="sorting_1">
+                  CPM 2022/33
+                </td>
+                <td>
+                  11.3
+                </td>
+                <td>
+                  <a href="/en/publications/90718/">Sea Containers Task Force</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/33_CPM_2022__SeaContainers_TaskForce-2022-02-11_uDwePie.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI342_CPM_33_Sea_Containers_TaskForce_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI342_CPM_33_Sea_Containers_TaskForce_fr_oCi2nRh.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI342_CPM_33_Sea_Containers_TaskForce_ru_xC1S14r.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI342_CPM_33_Sea_Containers_TaskForce_ar_vMm2Dj6.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI342_CPM_33_Sea_Containers_TaskForce_zh_VuTkBDi.pdf">Zh</a>
+                  <hr>
+                  <a href="https://www.ippc.int/en/core-activities/capacity-development/capacity-development-committee/ic-sub-group/ic-sub-group-sea-container-task-force-sctf/sctf-final-report/">Link</a>
+                </td>
+                <td>
+                  10 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90716">
+                <td class="sorting_1">
+                  CPM 2022/34
+                </td>
+                <td>
+                  06
+                </td>
+                <td>
+                  <a href="/en/publications/90716/">Report from the CPM Chairperson</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/34_CPM_2022_ReportChairperson-2022-02-09.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI336_CPM_2022_34_Report_Chairperson_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI336_CPM_2022_34_Report_Chairperson_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI336_CPM_2022_34_Report_Chairperson_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI336_CPM_2022_34_Report_Chairperson_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI336_CPM_2022_34_Report_Chairperson_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  09 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90719">
+                <td class="sorting_1">
+                  CPM 2022/35
+                </td>
+                <td>
+                  08.8.2
+                </td>
+                <td>
+                  <a href="/en/publications/90719/">Update from the CPM Focus Group: Implementation of the IPPC Strategic Framework 2020-2030</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/35_CPM_2022_FG_SFDAIS-2022-02-11.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI341_CPM_35_FG_SFDAIS_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI341_CPM_35_FG_SFDAIS_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI341_CPM_35_FG_SFDAIS_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI341_CPM_35_FG_SFDAIS_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI341_CPM_35_FG_SFDAIS_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  11 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90720">
+                <td class="sorting_1">
+                  CPM 2022/36
+                </td>
+                <td>
+                  08.8.1
+                </td>
+                <td>
+                  <a href="/en/publications/90720/">Recommendations and report from the CPM Focus Group on Pest Outbreaks Alert and Response Systems</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/36_CPM_2022_CPM_FG_POARS-2022-02-15.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI340_CPM_2022_36_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI340_CPM_2022_36_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI340_CPM_2022_36_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI340_CPM_2022_36_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI340_CPM_2022_36_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  15 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90721">
+                <td class="sorting_1">
+                  CPM 2022/37
+                </td>
+                <td>
+                  07
+                </td>
+                <td>
+                  <a href="/en/publications/90721/">Report from the IPPC Secretariat</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/03/37_CPM_2022_SecretariatReportCLEAN-2022-03-03_wpRMcZi.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI347_CPM_37_Secretariat_Report_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI347_CPM_37_Secretariat_Report_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI347_CPM_37_Secretariat_Report_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI347_CPM_37_Secretariat_Report_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI347_CPM_37_Secretariat_Report_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  03 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90722">
+                <td class="sorting_1">
+                  CPM 2022/38
+                </td>
+                <td>
+                  17.1
+                </td>
+                <td>
+                  <a href="/en/publications/90722/">Report from Technical Cooperation among regional plant protection organizations - Report of the 33rd Meeting of TC-RPPOs</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/03/38_CPM_2022_TCRPPO_Report_CLEAN-2022-03-05.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI352_CPM_2022_38_TCRPPO_Report_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI352_CPM_2022_38_TCRPPO_Report_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI352_CPM_2022_38_TCRPPO_Report_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI352_CPM_2022_38_TCRPPO_Report_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI352_CPM_2022_38_TCRPPO_Report_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  11 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90738">
+                <td class="sorting_1">
+                  CPM 2022/39
+                </td>
+                <td>
+                  08.8.4
+                </td>
+                <td>
+                  <a href="/en/publications/90738/">Update from the CPM Focus Group: Communications</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/39_CPM_2022_FG_CommUpdate-2022-02-17.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/NI399_CPM_2022_39_FG_Comm_Update_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/NI399_CPM_2022_39_FG_Comm_Update_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/03/NI399_CPM_2022_39_FG_Comm_Update_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/03/NI399_CPM_2022_39_FG_Comm_Update_ar.pdf">Ar</a> <a href="https://assets.ippc.int/static/media/files/publication/zh/2022/03/NI399_CPM_2022_39_FG_Comm_Update_zh.pdf">Zh</a>
+                </td>
+                <td>
+                  17 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90949">
+                <td class="sorting_1">
+                  CPM 2022/40
+                </td>
+                <td>
+                  12.1
+                </td>
+                <td>
+                  <a href="/en/publications/90949/">IPPC Secretariat financial report 2021</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/03/40_CPM_2022_IPPC_Secretariat_Financial_report_for_2021_2022-03-30.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/04/NI760_CPM_2022_40_Body_es.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/04/NI760_CPM_2022_40_fr.pdf">Fr</a> <a href="https://assets.ippc.int/static/media/files/publication/ru/2022/04/NI760_CPM_2022_40_ru.pdf">Ru</a> <a href="https://assets.ippc.int/static/media/files/publication/ar/2022/04/NI760_CPM_2022_40_ar.pdf">Ar</a>
+                </td>
+                <td>
+                  30 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90951">
+                <td class="sorting_1">
+                  CPM 2022/CRP/01
+                </td>
+                <td>
+                  7; 8.5; 8.8.1; 8.6; 9; 9.3.3; 11.3; 11.4
+                </td>
+                <td>
+                  <a href="/en/publications/90951/">Comments from Australia related to various CPM agenda items</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/04/CRP_01_AustraliaComments-2022-04-05.pdf">En</a>
+                </td>
+                <td>
+                  04 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90952">
+                <td class="sorting_1">
+                  CPM 2022/CRP/02
+                </td>
+                <td>
+                  11.4
+                </td>
+                <td>
+                  <a href="/en/publications/90952/">Phytosanitary Capacity Evaluations (PCE) - Proposal for expanding the use of the PCE tool</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/04/CRP_02_CommentsPCE-2022-04-01.pdf">En</a>
+                </td>
+                <td>
+                  04 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90953">
+                <td class="sorting_1">
+                  CPM 2022/CRP/03
+                </td>
+                <td>
+                  03.1
+                </td>
+                <td>
+                  <a href="/en/publications/90953/">Declaration of Competences and Voting Rights submitted by the European Union and its Member States</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/04/CRP_03_EU_Votingrights-2022-04-05.pdf">En</a>
+                </td>
+                <td>
+                  04 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90954">
+                <td class="sorting_1">
+                  CPM 2022/CRP/04
+                </td>
+                <td>
+                  8.2; 8.4; 8.8.3; 8.8.6; 9.2; 9.3; 10.1; 11; 2; 11.3
+                </td>
+                <td>
+                  <a href="/en/publications/90954/">Written statements to CPM-16 by EU</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/04/CRP_04_EU-written_statements-2022-04-04.pdf">En</a>
+                </td>
+                <td>
+                  04 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90955">
+                <td class="sorting_1">
+                  CPM 2022/CRP/05
+                </td>
+                <td>
+                  08.5
+                </td>
+                <td>
+                  <a href="/en/publications/90955/">PLANTIBIO project for Plant (pathogenic bacteria) antibiotic (resistance) – concept note</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/04/Concept_note_Plantibio_FV-1.pdf">En</a>
+                </td>
+                <td>
+                  04 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90956">
+                <td class="sorting_1">
+                  CPM 2022/CRP/06
+                </td>
+                <td>
+                  18.1; 18.2
+                </td>
+                <td>
+                  <a href="/en/publications/90956/">Confirmation of Membership and Potential Replacements for CPM Bureau and CPM Standards Committee</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/04/CRP_06_CPM_2022_BureauSCNominations-2022-04-04_4Gkz1uP.pdf">En</a>
+                </td>
+                <td>
+                  05 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90967">
+                <td class="sorting_1">
+                  CPM 2022/CRP/07
+                </td>
+                <td>
+                  08.8.1
+                </td>
+                <td>
+                  <a href="/en/publications/90967/">Document revised during the CPM Friends of the Chair meeting - Recommendations and report from the CPM Focus Group on Pest Outbreaks Alert and Response Systems (CPM 2022/36)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/04/CRP07_CPM_2022_CPM_FG_POARS_Body-2022-07-04REV.pdf">En</a>
+                </td>
+                <td>
+                  07 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90968">
+                <td class="sorting_1">
+                  CPM 2022/CRP/08
+                </td>
+                <td>
+                  09.3.3
+                </td>
+                <td>
+                  <a href="/en/publications/90968/">Document revised during the CPM FoC ATTACHMENT 1. [draft] terms of reference for a Focus Group on the safe provision of food and other humanitarian aid</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/04/CRP_08_SCRecomendations_SafeProvision_FoodHumanitarianAid_Annex-2022-02-02_TC.pdf">En</a>
+                </td>
+                <td>
+                  07 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90969">
+                <td class="sorting_1">
+                  CPM 2022/CRP/09
+                </td>
+                <td>
+                  08.8.6
+                </td>
+                <td>
+                  <a href="/en/publications/90969/">Document revised during the CPM FoC - Proposed establishment and draft TOR CPM Focus Group on Sea Containers.</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/04/CRP_09_Paper_Re_8.8.6_Focus_Group_on_Sea_Containers_rev_from_FoC.pdf">En</a>
+                </td>
+                <td>
+                  07 Apr 2022
+                </td>
+              </tr>
+              <tr id="media-file-90901">
+                <td class="sorting_1">
+                  CPM 2022/INF/01
+                </td>
+                <td>
+                  03
+                </td>
+                <td>
+                  <a href="/en/publications/90901/">CPM-16 Schedule</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/03/INF_01_CPM-16_Schedule_With_Times_2022docx_5ScmL8M.pdf">En</a>
+                </td>
+                <td>
+                  30 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90902">
+                <td class="sorting_1">
+                  CPM 2022/INF/02
+                </td>
+                <td>
+                  03
+                </td>
+                <td>
+                  <a href="/en/publications/90902/">Document list</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/03/INF_02_DocList_xUUwMqU.pdf">En</a>
+                </td>
+                <td>
+                  30 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90729">
+                <td class="sorting_1">
+                  CPM 2022/INF/03
+                </td>
+                <td>
+                  16.2
+                </td>
+                <td>
+                  <a href="/en/publications/90729/">Written reports from international organizations - WTO Secretariat Update</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/INF_03_CPM_2022_WTO_Report_Body_En-2022-02-15.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/es/2022/03/INF_03_CPM_2022_WTO_Report_Body_Es-2022-02-15.pdf">Es</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/INF_03_CPM_2022_WTO_Report_Body_Fr-2022-02-15.pdf">Fr</a>
+                </td>
+                <td>
+                  16 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90730">
+                <td class="sorting_1">
+                  CPM 2022/INF/04
+                </td>
+                <td>
+                  16.2
+                </td>
+                <td>
+                  <a href="/en/publications/90730/">Written reports from international organizations - CABI Updates</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/INF_04_CPM_2022_CABI_Report_Body-2022-02-15.pdf">En</a>
+                </td>
+                <td>
+                  16 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90731">
+                <td class="sorting_1">
+                  CPM 2022/INF/05
+                </td>
+                <td>
+                  16.2
+                </td>
+                <td>
+                  <a href="/en/publications/90731/">Written reports from international organizations - Biological Weapons Convention (BWC) Inputs</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/INF_05_CPM_2022_BWC_Report-2022-2-15.pdf">En</a>
+                </td>
+                <td>
+                  16 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90732">
+                <td class="sorting_1">
+                  CPM 2022/INF/06
+                </td>
+                <td>
+                  16.2
+                </td>
+                <td>
+                  <a href="/en/publications/90732/">Written reports from international organizations - COLEACP SPS Activities</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/INF_06_CPM_2022_COLEACP_SPS_Overview-2022-02-15.pdf">En</a>
+                </td>
+                <td>
+                  16 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90733">
+                <td class="sorting_1">
+                  CPM 2022/INF/07
+                </td>
+                <td>
+                  16.2
+                </td>
+                <td>
+                  <a href="/en/publications/90733/">Written reports from international organizations - UPU Postal Security Group (PSG) Update</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/INF_07_CPM_2022_UPU_Report-2022-02-15.pdf">En</a>
+                </td>
+                <td>
+                  16 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90734">
+                <td class="sorting_1">
+                  CPM 2022/INF/08
+                </td>
+                <td>
+                  16.2
+                </td>
+                <td>
+                  <a href="/en/publications/90734/">Written reports from international organizations - Joint FAO/IAEA Centre of Nuclear Techniques in Food and Agriculture Report</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/INF_08_CPM_2022_FAO-IAEA_Report_2022-02-15.pdf">En</a>
+                </td>
+                <td>
+                  16 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90735">
+                <td class="sorting_1">
+                  CPM 2022/INF/09
+                </td>
+                <td>
+                  16.2
+                </td>
+                <td>
+                  <a href="/en/publications/90735/">Written reports from international organizations - European Food Safety Authority (EFSA) Activities</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/INF_09_CPM_2022_EFSA_activities-2022-02-15.pdf">En</a>
+                </td>
+                <td>
+                  16 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90736">
+                <td class="sorting_1">
+                  CPM 2022/INF/10
+                </td>
+                <td>
+                  16.2
+                </td>
+                <td>
+                  <a href="/en/publications/90736/">Written reports from international organizations - The Standards and Trade Development Facility (STDF) Overview</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/INF_10_CPM_2022_STDF_overview_En-2022-02-15.pdf">En</a> <a href="https://assets.ippc.int/static/media/files/publication/fr/2022/03/INF_10_CPM_2022_STDF_overview_Fr-2022-02-15.pdf">Fr</a>
+                </td>
+                <td>
+                  16 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90737">
+                <td class="sorting_1">
+                  CPM 2022/INF/11
+                </td>
+                <td>
+                  16.2
+                </td>
+                <td>
+                  <a href="/en/publications/90737/">Written reports from international organizations - The International Forestry Quarantine Research Group (IFQRG) Update</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/02/INF_11_CPM_2022_IFQRG-2022-02-15.pdf">En</a>
+                </td>
+                <td>
+                  16 Feb 2022
+                </td>
+              </tr>
+              <tr id="media-file-90802">
+                <td class="sorting_1">
+                  CPM 2022/INF/12
+                </td>
+                <td>
+                  17.1
+                </td>
+                <td>
+                  <a href="/en/publications/90802/">Report from Technical Cooperation among regional plant protection organizations - Annual meeting of the Regional Taskforce of NPPOs and West African Partners</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/03/INF_12_CPM_2022_ECOWAS-2022-03-10.pdf">En</a>
+                </td>
+                <td>
+                  10 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90808">
+                <td class="sorting_1">
+                  CPM 2022/INF/13
+                </td>
+                <td>
+                  16.2
+                </td>
+                <td>
+                  <a href="/en/publications/90808/">Written reports from international organizations - Report by the Ozone Secretariat for the Montreal Protocol on Substances that Deplete the Ozone Layer</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/03/INF_13_CPM_2022_OZON-2022-03-14.pdf">En</a>
+                </td>
+                <td>
+                  14 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90898">
+                <td class="sorting_1">
+                  CPM 2022/INF/14
+                </td>
+                <td>
+                  16.2
+                </td>
+                <td>
+                  <a href="/en/publications/90898/">Written reports from international organizations - Phytosanitary Measures Research Group (PMRG)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/03/INF_14_CPM_2022_PMRG-2022-03-21.pdf">En</a>
+                </td>
+                <td>
+                  21 Mar 2022
+                </td>
+              </tr>
+              <tr id="media-file-90899">
+                <td class="sorting_1">
+                  CPM 2022/INF/15
+                </td>
+                <td>
+                  09.2
+                </td>
+                <td>
+                  <a href="/en/publications/90899/">Adoption of International Standards for Phytosanitary Measures – Objections to draft ISPMs presented for adoption by CPM-16 (2022)</a>
+                </td>
+                <td>
+                  <a href="https://assets.ippc.int/static/media/files/publication/en/2022/03/INF_15_CPM_2022_ISPM_Objections-2022-03-21_2xtRIEI.pdf">En</a>
+                </td>
+                <td>
+                  25 Mar 2022
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>Showing 1 to 80 of 87 entries</p>
+          
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path></svg> Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M8.22 2.97a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06l2.97-2.97H3.75a.75.75 0 010-1.5h7.44L8.22 4.03a.75.75 0 010-1.06z"></path></svg></a></li>
+            </ul>
+          </nav>
+
+          <p>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg>
+              Download multiple files
+            </a>
+          </p>
+
+        </div>  <!-- end .col-md-12 -->
+      </div> <!-- end .row -->
+
+
+<!-- =footer
+   ___           _
+  / __\__   ___ | |_ ___ _ __
+ / _\/ _ \ / _ \| __/ _ \ '__|
+/ / | (_) | (_) | ||  __/ |
+\/   \___/ \___/ \__\___|_|
+
+ -->
+
+      <div class="row" id="footer">
+        <div class="col-sm-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">Newsletter</h5>
+              <p class="card-text">Subscribe to receive the latest <a href="#">news</a> from the IPPC in your inbox.</p>
+              <a href="#" class="btn btn-primary">Subscribe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#top" class="text-decoration-none">↑ <span style="color:var(--bs-dark);">Back To Top</span></a></h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none">Contact</a></li>
+                <li><a href="#" class="text-decoration-none">FAQ</a> &amp; <a href="#" class="text-decoration-none">Sitemap</a></li>
+                <li><a href="#" class="text-decoration-none">Copyright & Legal</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">IPPC Socials</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none">Twitter</a></li>
+                <li><a href="#" class="text-decoration-none">LinkedIn</a></li>
+                <li><a href="#" class="text-decoration-none">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>    
+        
+        <div class="position-relative"> 
+          <div class="card logo-bottom shadow-sm border-0">
+            <div class="card-body">
+              <a href="#"><img src="../img/IPPC_logo_Green_3lines_en.svg" alt="IPPC" style="max-width:225px;"></a>
+            </div>
+          </div>
+        </div> <!-- end .position-relative -->
+        
+      </div> <!-- end .row -->
+      
+    </div> <!-- end .container -->
+    
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,134 @@
+/* 
+
+IPPC 2022 redesign theme for Bootstrap framework.
+
+Nota Bene: Work in progress! Get latest version from https://github.com/hypertexthero/ippcvi/
+
+*/
+
+body {font-family: 'Inter', verdana, sans-serif; background:#fff url(../img/leaves.png) repeat scroll;}
+/* Text default color is #212529 and comes from bootstrap.min.css. It can be set with the following CSS: color:var(--bs-dark); */
+body#core-activities .globalnav {max-width:1320px; margin:15px 0 0;}
+body#core-activities .globalnav a {color:#1B5E20;}
+
+div.maincontainer {background:#fafafa url(../img/noisy-texture-200x200-fafafa.png) repeat scroll; background-image-opacity:0.25; border-left:1px solid #ddd; border-right:1px solid #ddd;} 
+/*a {color:#198754;}*/
+a:hover {text-decoration:none !important;}
+
+.crumbs {height:auto; padding:16px 10px 0; background:#eee; border-bottom:1px solid #ccc; display:block;}
+.crumbs a {text-decoration:none;}
+
+header {padding-top:25px;}
+
+img#faologo {width:200px !important; padding:0 0 13px 0 !important; margin-right:20px;}
+img#ippclogo {width:213px !important; padding:0 0 13px 0 !important; margin-right:90px !important;}
+form#searchform {margin-right:130px; margin-bottom:10px;}
+form#searchform button {margin:0 0 4px 0 !important;}
+.utilities {min-width:300px; margin-bottom:20px;}
+
+h1, h2, h3 {font-weight:900;}
+blockquote p {font-size:1rem; padding-left:10px; border-left:2px solid #ccc;}
+code, pre {font-family:monaco, "courier new", monospace; background:#eee; padding:0.5rem;}
+.note {background:#fff4a2;}
+
+/* =nb: To make “hamburger” menu appear at a larger size as a work-around for the weird text overflow bug, set navbar-expand-xl class in the <nav> html - https://stackoverflow.com/a/36289507 */
+
+/* =globalnav ========================== */
+.navbar-dark {margin:0 -12px; word-wrap: break-word !important;} /* border-radius:0.5rem; */
+.navbar-dark li {word-wrap: break-word !important;}
+.navbar-dark a.nav-link {color:#fff !important; font-weight:bold; word-wrap: break-word !important; padding:0 12px !important;}
+.navbar-dark a.dropdown-item {color:rgba(0,0,0,1) !important;}
+.navbar-dark a.disabled {color:rgba(255,255,255,.75) !important;}
+
+/* =Navbar =background ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ 
+Currently the same texture, with background colors defined by the body ID. */
+.bg-dark {
+/*  background:url(../img/Header-Background-CoreActivities.jpg) repeat 0 0; max-width:1320px;*/
+  background:#3E6421 url(../img/noisy-texture-200x200-o8-d19-c-3E6421-t1.png) repeat 0 0; max-width:1320px; 
+  /* https://www.noisetexturegenerator.com/ */
+  }
+  
+  body#core-activities .bg-dark,
+  body#core-activities .dropdown-item.active {background-color:#357007 !important; background:url(../img/Header-Background-CoreActivities.jpg) no-repeat 0 0;}
+  body#core-activities .navbar {border-bottom:5px solid #357007;}
+  
+  body#commission .bg-dark,
+  body#commission .dropdown-item.active {background-color:#FFCA28 !important; background:url(../img/Header-Background-Commission1.jpg) no-repeat 0 0;}
+  body#commission .bg-dark a {color:#111111 !important;}
+  body#commission .navbar {border-bottom:5px solid #FFCA28;}
+  
+  body#countries .bg-dark,
+  body#countries .dropdown-item.active {background-color:#FF9800 !important; background:url(../img/Footer-Background-Countries.jpg) no-repeat 0 0;}
+  body#countries .bg-dark a {/*color:#111111 !important;*/}
+  body#countries .navbar {border-bottom:5px solid #FF9800;}
+  
+  body#news .bg-dark,
+  body#news .dropdown-item.active {background-color:#5B92E5 !important; background:url(../img/Header-Background-News.jpg) no-repeat 0 0;}
+  body#news .bg-dark a {/*color:#111111 !important;*/}
+  body#news .navbar {border-bottom:5px solid #5B92E5;}
+  
+  body#standards .bg-dark,
+  body#standards .dropdown-item.active {background-color:#811B1E !important; background:url(../img/Header-Background-Standards.jpg) no-repeat 0 0;}
+  body#standards .bg-dark a {/*color:#111111 !important;*/}
+  body#standards .navbar {border-bottom:5px solid #811B1E;}
+  
+  body#about .bg-dark,
+  body#about .dropdown-item.active {background-color:#E65100 !important; background:url(../img/Header-Background-About.jpg) no-repeat 0 0;}
+  body#about .bg-dark a {/*color:#111111 !important;*/}
+  body#about .navbar {border-bottom:5px solid #E65100;}
+  
+  body#resources .bg-dark,
+  body#resources .dropdown-item.active {background-color:#00BFA5 !important; background:url(../img/Header-Background-Resources.jpg) no-repeat 0 0;}
+  body#resources .bg-dark a {/*color:#111111 !important;*/}
+  body#resources .navbar {border-bottom:5px solid #00BFA5;}
+    
+  
+/* =buttons ------------- 
+  https://getbootstrap.com/docs/4.0/components/buttons/ */
+
+/*.btn-primary {background-color: !important;}*/
+/* Brown secondary? Or leave gray? */
+.btn-secondary {background-color:#a47058 !important; }
+/*.btn-success {background-color: !important;}
+.btn-danger {background-color: !important;}
+.btn-warning {background-color: !important;}
+.btn-info {background-color: !important;}
+.btn-light {background-color: !important;}
+.btn-dark {background-color: !important;}*/
+
+.navbar-brand {font-size:1rem; margin-right:0.5rem;}
+.active {font-style:italic !important;}
+
+p.breadcrumbs {padding:10px 0;}
+
+#footer {min-height:432px; /*border:1px solid #ddd; border-radius:0.75rem 0.75rem 0 0; border-bottom:0;*/  padding-top:15px;}
+
+/* Custom section =footer =images defined by the body ID. ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+Nb: Images should be 1400px wide (for slight reduction to 1320 in retina displays) and 528px tall. */
+body#core-activities #footer {background:url(../img/Footer-Background-CoreActivities.gif) no-repeat 20px 20px;}
+body#commission #footer {background:url(../img/Footer-Background-Commission.jpg) no-repeat 0 0;}
+body#countries #footer {background:url(../img/Footer-Background-Countries.jpg) no-repeat 0 0;}
+body#news #footer {background:url(../img/Footer-Background-News.png) no-repeat 0 0;}
+body#standards #footer {background:url(../img/Footer-Background-Standards.png) no-repeat 0 0;}
+body#about #footer {background:url(../img/Footer-Background-About.png) no-repeat 0 3px;}
+body#resources #footer {background:url(../img/Footer-Background-Resources.png) no-repeat 5px 5px;}
+
+.normal {font-weight:normal !important;}
+
+#footer .card {background-color:rgba(255,255,255,.75); border:1px solid inherit; border-radius:0.75rem; margin-bottom:calc(var(--bs-gutter-x) * .5);}
+
+.logo-bottom {width:225px; max-height:100px; border-radius:0.75rem 0.75rem 0 0 !important; margin:calc(var(--bs-gutter-x) * .5) calc(var(--bs-gutter-x) * .5) 0 calc(var(--bs-gutter-x) * .5); position:absolute; right:0; bottom:0; margin-bottom:0 !important;}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
+  }

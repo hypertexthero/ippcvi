@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="none">
+
+    <title>Single Page Template - Templates - IPPC</title>
+    
+    <!-- Inter Typeface. We can host it ourselves (maybe preferred) or have Google host it (current implementation) =typeface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IPPC Theme -->
+    <link href="../css/ippc.css" rel="stylesheet">
+
+  </head>
+
+<!-- =body (ASCII art is the “Ogre” font at https://patorjk.com/software/taag/#p=display&f=Ogre)
+   ___           _       
+  / __\ ___   __| |_   _ 
+ /__\/// _ \ / _` | | | |
+/ \/  \ (_) | (_| | |_| |
+\_____/\___/ \__,_|\__, |
+                   |___/ 
+-->
+
+  <body id="core-activities">
+    <a id="top"></a>
+    <div class="crumbs">
+      <p>
+        <a href="../../index.html">IPPC Design Docs 2021–2022</a> &rarr; <a href="../">HTML &amp; CSS Templates</a> &rarr; Single Page Template 
+        &nbsp;&nbsp;&nbsp;<em style="float:right;">Updated on 2022-05-28</em>
+      </p>
+    </div>
+    
+<!-- =header
+                      _           
+  /\  /\___  __ _  __| | ___ _ __ 
+ / /_/ / _ \/ _` |/ _` |/ _ \ '__|
+/ __  /  __/ (_| | (_| |  __/ |   
+\/ /_/ \___|\__,_|\__,_|\___|_|   
+
+-->
+    
+    <div class="container maincontainer shadow">
+      <div class="row">
+        <div class="col-md-12">
+          
+          <header>
+            <div class="row">
+              <div class="col-md-12">
+                <a href="#"><img id="faologo" src="../img/FAO_logo_Blue_3lines_en.svg" alt="FAO" class="d-inline-block"></a>
+                
+                <a href="#"><img id="ippclogo" src="../img/IPPC_logo_Green_3lines_en.svg" alt="IPPC" class="d-inline-block"></a>
+                
+                <form class="form-inline d-inline-block" id="searchform">
+                  <div class="form-row">
+                    <input class="form-control d-inline-block w-auto" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success d-inline-block w-auto"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="display: inline-block; vertical-align: middle;"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg></button>
+                  </div>
+                </form>
+                
+                <div class="utilities d-inline-block"> <!-- d-flex justify-content-end -->
+                  <div class="dropdown d-inline">
+                    <a class="btn btn-outline-success btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">العربية</a></li>
+                      <li><a class="dropdown-item" href="#">中文</a></li>
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">Français</a></li>
+                      <li><a class="dropdown-item" href="#">Русский</a></li>
+                      <li><a class="dropdown-item" href="#">Español</a></li>
+                    </ul>
+                  </div>&nbsp;
+                  <a href="#" class="d-inline-block text-success" role="button">FAQ</a>&nbsp;
+                  <a href="#" class="d-inline-block text-success" role="button">Login</a>
+                </div> <!-- end .utilities -->
+
+            </div> <!-- end .row -->
+          </header>
+          
+        </div> <!-- end .col-md-12 -->
+      </div> <!-- end .row -->
+
+<!-- =globalnav
+   ___ _       _           _                   
+  / _ \ | ___ | |__   __ _| |_ __   __ ___   __
+ / /_\/ |/ _ \| '_ \ / _` | | '_ \ / _` \ \ / /
+/ /_\\| | (_) | |_) | (_| | | | | | (_| |\ V / 
+\____/|_|\___/|_.__/ \__,_|_|_| |_|\__,_| \_/  
+
+Nota bene: For =nested =drop-down =menus, see here: https://bootstrap-menu.com/detail-multilevel.html
+
+-->
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow" aria-label="Global navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">IPPC Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Single Page Template</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+              <li><a class="dropdown-item" href="#">Page</a></li>
+              <li><a class="dropdown-item" href="#">Another page</a></li>
+              <li><a class="dropdown-item" href="#">Yet another page</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- =breadcrumbs
+   ___                    _                           _         
+  / __\_ __ ___  __ _  __| | ___ _ __ _   _ _ __ ___ | |__  ___ 
+ /__\// '__/ _ \/ _` |/ _` |/ __| '__| | | | '_ ` _ \| '_ \/ __|
+/ \/  \ | |  __/ (_| | (_| | (__| |  | |_| | | | | | | |_) \__ \
+\_____/_|  \___|\__,_|\__,_|\___|_|   \__,_|_| |_| |_|_.__/|___/
+                                                                
+-->
+          
+          <div class="row">
+            <div class="col-md-auto">
+              <p class="breadcrumbs"><a href="../../index.html">Home</a> &rarr; Single Page Template</p>
+            </div>
+          </div>
+      
+<!-- =content
+   ___            _             _   
+  / __\___  _ __ | |_ ___ _ __ | |_ 
+ / /  / _ \| '_ \| __/ _ \ '_ \| __|
+/ /__| (_) | | | | ||  __/ | | | |_ 
+\____/\___/|_| |_|\__\___|_| |_|\__|
+
+ -->
+
+      <div class="row">
+        <div class="col-md-7">
+          
+          <h1>Single Page Template</h1>
+          
+          <p>This page is a demonstration containing various types of content that can be used throughout the IPPC website. Basic typography, <a href="#">links</a>, lists, tables, images, code, and more are all supported as expected. For exhaustive detailed documentation on these and more see the <a href="https://getbootstrap.com/docs/">Bootstrap docs</a>.</p> 
+          
+          <p>More components will continue to be added here until a rich set is available for use in all situations.</p>
+            
+          <hr>
+          
+          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+
+          <h2 id="blockquotes">Blockquotes</h2> <!-- =blockquote -->
+
+          <p>Here are examples of blockquotes:</p>
+          
+          <blockquote class="blockquote">
+            <p>Quoted text goes here.</p>
+          </blockquote>
+          
+          <figure>
+            <blockquote class="blockquote">
+              <p>A quotation, contained in a blockquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Someone, <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+          
+          <h2 id="lists">Lists</h2> <!-- =lists -->
+
+          <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example <strong>unordered list</strong>:</p>
+
+          <ul>
+            <li>First list item</li>
+            <li>Second list item with a longer description</li>
+            <li>Third list item to close it out</li>
+          </ul>
+          
+          <p>And this is an <strong>ordered list</strong>:</p>
+          
+          <ol>
+            <li>First list item</li>
+            <li>Second list item with a longer description</li>
+            <li>Third list item to close it out</li>
+          </ol>
+          
+          <ul class="list-unstyled">
+            <li>This is an <strong>unstyled list</strong>.</li>
+            <li>It appears completely unstyled.</li>
+            <li>Structurally, it's still a list.</li>
+            <li>However, this style only applies to immediate child elements.</li>
+            <li><strong>Nested lists</strong>:
+              <ul>
+                <li>are unaffected by this style</li>
+                <li>will still show a bullet</li>
+                <li>and have appropriate left margin</li>
+              </ul>
+            </li>
+            <li>This may still come in handy in some situations.</li>
+          </ul>
+          
+          <p>And this is a <strong>definition list</strong>:</p>
+          
+          <dl>
+            <dt>HyperText Markup Language (HTML)</dt>
+            <dd>The language used to describe and define the content of a Web page</dd>
+            <dt>Cascading Style Sheets (CSS)</dt>
+            <dd>Used to describe the appearance of Web content</dd>
+            <dt>JavaScript (JS)</dt>
+            <dd>The programming language used to build advanced Web sites and applications</dd>
+          </dl>
+          
+          <h2 id="inline">Inline HTML elements</h2> <!-- =inline -->
+          
+          <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+          
+          <ul>
+            <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+            <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+            <li>To <mark>highlight text</mark>, use <code>&lt;mark&gt;</code>.</li>
+            <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+            <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+            <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+            <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+          </ul>
+          
+          <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+          
+          <h2 id="misc">Miscellaneous Utilities</h2> <!-- =miscellaneous =utilities =sizing =spacing -->
+          
+          <p>See also: Controlling <a href="https://getbootstrap.com/docs/4.3/utilities/sizing/">sizing</a> and <a href="https://getbootstrap.com/docs/4.3/utilities/spacing/">spacing</a>.</p>
+          
+          <p class="text-start">Start aligned text on all viewport sizes.</p>
+          <p class="text-center">Center aligned text on all viewport sizes.</p>
+          <p class="text-end">End aligned text on all viewport sizes.</p>
+          
+          <p class="text-lowercase">Lowercased text.</p>
+          <p class="text-uppercase">Uppercased text.</p>
+          <p class="text-capitalize">CapiTaliZed text.</p>
+          
+          <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+          <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+          <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+          <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+          
+          <!-- =headings -->
+          
+          <h1 id="headings">Heading One</h1>
+          
+          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+
+          <h2>Heading Two</h2>
+          
+          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+          
+          <h3>Heading Three</h3>
+          
+          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+          
+          <h4>Heading Four</h4>
+          
+          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+          
+          <h5>Heading Five</h5>
+          
+          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+          
+          <h6>Heading Six</h6>
+          
+          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+          
+          <pre><code>Example code block</code></pre> <!-- =code -->
+          
+          <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+          
+          <h2 id="tables">Tables</h2> <!-- =tables -->
+          
+          <table class="table table-striped table-hover">
+            <caption>List of users (table caption). For sortable, searchable tables <a href="https://stackoverflow.com/a/31911215">see here</a>.</caption>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Athena</td>
+                <td>of Greece</td>
+                <td>@athena</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Nina</td>
+                <td>Simone</td>
+                <td>@nina</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Margaret</td>
+                <td>Hamilton</td>
+                <td>@mhamilton</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <h2 id="forms">Forms</h2> <!-- =forms -->
+          
+          <p>Basic login form</p>
+          
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          
+          <br>
+          <br>
+          
+          <p>Various form elements.</p>
+          
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Text example input</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Input help text.</div>
+            </div>
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Password</label>
+              </div>
+              <div class="col-auto">
+                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-auto">
+                <span id="passwordHelpInline" class="form-text">
+                  Must be 8-20 characters long.
+                </span>
+              </div>
+            </div>
+            
+            <br>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Checked checkbox
+              </label>
+            </div>
+            
+            <br>
+            
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            
+            <br>
+            
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+              <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+              <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+            </div>
+            
+            <br>
+            
+            <label for="customRange1" class="form-label">Example range</label>
+            <input type="range" class="form-range" id="customRange1">
+            
+            <br>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Default checked radio
+              </label>
+            </div>
+            
+            <br>
+            
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+
+            <label for="basic-url" class="form-label">Your vanity URL</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-text">.00</span>
+            </div>
+
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-text">With textarea</span>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            
+            <br>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button class="btn btn-sm btn-secondary" type="submit">Cancel</button>
+            <button class="btn btn-sm btn-success" type="submit">Success</button>
+            <button class="btn btn-sm btn-warning" type="submit">Warning</button>
+            <button class="btn btn-sm btn-danger" type="submit">Danger</button>
+            <button class="btn btn-sm btn-info" type="submit">Info</button>
+
+          </form>
+          
+          <br>
+          
+          <p>See also <a href="https://getbootstrap.com/docs/5.0/forms/validation/">form validation</a>.</p>          
+          
+          <br>
+          <br>
+          
+          <h2 id="tabs">Tabs</h2> <!-- =tabs -->
+          
+          <p>JavaScript needed to <a href="https://getbootstrap.com/docs/4.3/components/navs/#javascript-behavior">control behavior</a> Also <a href="https://stackoverflow.com/questions/67293990/bootstrap5-0-tabs-not-working-when-i-click-on-them-different-tab-information-sh">see this</a> if you have trouble, like I did, getting the default example to work!
+          
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-link active" id="nav-announcements-tab" data-bs-toggle="tab" href="#nav-announcements" role="tab" aria-controls="nav-announcements" aria-selected="true">Announcements</a>
+                <a class="nav-link" id="nav-calls-tab" data-bs-toggle="tab" href="#nav-calls" role="tab" aria-controls="nav-calls" aria-selected="false">Calls</a>
+                <a class="nav-link" id="nav-pestreports-tab" data-bs-toggle="tab" href="#nav-pestreports" role="tab" aria-controls="nav-pestreports" aria-selected="false">Pest Reports</a>
+              </div>
+            </nav>          
+            <div class="tab-content p-3" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-announcements" role="tabpanel" aria-labelledby="nav-announcements-tab">
+                <p>Announcements go here.</p>
+              </div>
+              <div class="tab-pane fade" id="nav-calls" role="tabpanel" aria-labelledby="nav-calls-tab">
+                <p>Calls here.</p>
+              </div>
+              <div class="tab-pane fade" id="nav-pestreports" role="tabpanel" aria-labelledby="nav-pestreports-tab">
+                <p>And finally Pest reports, here!</p>
+              </div>
+            </div>
+          
+          <br>
+          <br>
+          
+          <h2 id="cards">Cards <small><a style="font-weight:normal;" href="https://getbootstrap.com/docs/4.3/components/card/">docs</a></small></h2> <!-- =cards -->
+          
+          <div class="card">
+            <div class="card-body">
+              This is some text within a card body.
+            </div>
+          </div>
+          
+          <br>
+          
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          
+          <br>
+          
+          <div class="card">
+            <h5 class="card-header">Featured</h5>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          
+          <br>
+          
+          <div class="card">
+            <div class="card-header">
+              Quote
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">Someone in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+          
+          <br>
+          
+          <div class="card text-center">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+              2 days ago
+            </div>
+          </div>
+          
+          <br>
+          
+          <div class="card" style="width: 18rem;">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          
+          <br>
+          
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Wide Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <br>
+          
+          <p>Cards take 100% width by default, and rows and column <a href="https://getbootstrap.com/docs/4.3/components/card/#sizing">sizing utilities</a> must be used to size them.</p>
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <br>
+          
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card-deck">
+                <div class="card">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated x mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated x mins ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"><small class="text-muted">Last updated x mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end .row -->
+          
+          <br>
+          <br>
+          
+          <h2 id="thumbnails">Thumbnail Album</h2> <!-- =thumbnails =album -->
+
+          <div class="album py-1 bg-light">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                      <p class="card-text">Caption text here.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">Small label</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                      <p class="card-text">Caption text here.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">Small label</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                      <p class="card-text">Caption text here.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">Small label</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div> <!-- end .row .row-cols-1 .row-cols-sm-2 .row-cols-md-3 .g-3 -->
+            </div> <!-- end .container -->
+          </div> <!-- end .album .py-5 .bg-light -->
+          
+          <br>
+          <br>
+          
+        </div>  <!-- end .col-md-3 content -->
+
+<!-- =sidebar
+ __ _     _      _                
+/ _(_) __| | ___| |__   __ _ _ __ 
+\ \| |/ _` |/ _ \ '_ \ / _` | '__|
+_\ \ | (_| |  __/ |_) | (_| | |   
+\__/_|\__,_|\___|_.__/ \__,_|_|   
+
+ -->
+
+        <div class="col-md-5" id="sidebar">
+          <img id="image" class="sidebar-featured-img img-fluid" src="../img/sidebar-img-core-activities.png" alt="Color illustration of a leaf and twig.">
+          <!-- =nb =sidebarimg: Sidebar images should be at least 600px wide. -->
+          <p>
+            <hr> <!-- =nb: Use a horizontal rule when the image is transparent and does not have defined edges. -->
+            <em>Water-color sketches of plants of North America and Europe, Helen Sharp, 1888–1903.</em>
+          </p>
+          
+          <h2>Section Navigation</h2>
+          
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link to page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Another link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled link</a>
+            </li>
+          </ul>
+          
+          <hr>
+          
+          <h2>List Group</h2>
+          
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">Active item</a>
+            <a href="#" class="list-group-item list-group-item-action">A second item</a>
+            <a href="#" class="list-group-item list-group-item-action">A third item</a>
+            <a href="#" class="list-group-item list-group-item-action">A fourth item</a>
+            <a href="#" class="list-group-item list-group-item-action disabled">Disabled item</a>
+          </div>
+
+        </div>  <!-- end .col-md-5 sidebar -->
+      </div> <!-- end .row -->
+
+<!-- =footer
+   ___           _
+  / __\__   ___ | |_ ___ _ __
+ / _\/ _ \ / _ \| __/ _ \ '__|
+/ / | (_) | (_) | ||  __/ |
+\/   \___/ \___/ \__\___|_|
+
+ -->
+
+      <div class="row" id="footer">
+        <div class="col-sm-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">Newsletter</h5>
+              <p class="card-text">Subscribe to receive the latest <a href="#">news</a> from the IPPC in your inbox.</p>
+              <a href="#" class="btn btn-primary">Subscribe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#top" class="text-decoration-none">↑ <span style="color:var(--bs-dark);">Back To Top</span></a></h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none">Contact</a></li>
+                <li><a href="#" class="text-decoration-none">FAQ</a> &amp; <a href="#" class="text-decoration-none">Sitemap</a></li>
+                <li><a href="#" class="text-decoration-none">Copyright & Legal</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">IPPC Socials</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none">Twitter</a></li>
+                <li><a href="#" class="text-decoration-none">LinkedIn</a></li>
+                <li><a href="#" class="text-decoration-none">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>    
+        
+        <div class="position-relative"> 
+          <div class="card logo-bottom shadow-sm border-0">
+            <div class="card-body">
+              <a href="#"><img src="../img/IPPC_logo_Green_3lines_en.svg" alt="IPPC" style="max-width:225px;"></a>
+            </div>
+          </div>
+        </div> <!-- end .position-relative -->
+        
+      </div> <!-- end .row -->
+      
+    </div> <!-- end .container -->
+    
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>

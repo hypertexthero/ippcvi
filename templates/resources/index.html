@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="none">
+
+    <title>Resources - Templates - IPPC</title>
+    
+    <!-- Inter Typeface. We can host it ourselves (maybe preferred) or have Google host it (current implementation) =typeface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IPPC Theme -->
+    <link href="../css/ippc.css" rel="stylesheet">
+
+  </head>
+
+<!-- =body (ASCII art is the “Ogre” font at https://patorjk.com/software/taag/#p=display&f=Ogre)
+   ___           _       
+  / __\ ___   __| |_   _ 
+ /__\/// _ \ / _` | | | |
+/ \/  \ (_) | (_| | |_| |
+\_____/\___/ \__,_|\__, |
+                   |___/ 
+-->
+
+  <body id="resources">
+    <a id="top"></a>
+    <div class="crumbs">
+      <p>
+        <a href="../../index.html">IPPC Design Docs 2022–2022</a> &rarr; <a href="../">HTML &amp; CSS Templates</a> &rarr; - Resources
+        &nbsp;&nbsp;&nbsp;<em style="float:right;">Updated on 2022-05-29</em>
+      </p>
+    </div>
+    
+<!-- =header
+                      _           
+  /\  /\___  __ _  __| | ___ _ __ 
+ / /_/ / _ \/ _` |/ _` |/ _ \ '__|
+/ __  /  __/ (_| | (_| |  __/ |   
+\/ /_/ \___|\__,_|\__,_|\___|_|   
+
+-->
+    
+    <div class="container maincontainer shadow">
+      <div class="row">
+        <div class="col-md-12">
+          
+          <header>
+            <div class="row">
+              <div class="col-md-12">
+                <a href="#"><img id="faologo" src="../img/FAO_logo_Blue_3lines_en.svg" alt="FAO" class="d-inline-block"></a>
+                
+                <a href="#"><img id="ippclogo" src="../img/IPPC_logo_Green_3lines_en.svg" alt="IPPC" class="d-inline-block"></a>
+                
+                <form class="form-inline d-inline-block" id="searchform">
+                  <div class="form-row">
+                    <input class="form-control d-inline-block w-auto" type="text" placeholder="Search" aria-label="Search">
+                    <!-- <button class="btn btn-primary d-inline-block w-auto" type="submit">Go</button> -->
+                    <button class="btn btn-success d-inline-block w-auto"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="display: inline-block; vertical-align: middle;"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg></button>
+                  </div>
+                </form>
+                
+                <div class="utilities d-inline-block"> <!-- d-flex justify-content-end -->
+                  <div class="dropdown d-inline">
+                    <a class="btn btn-outline-success btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">العربية</a></li>
+                      <li><a class="dropdown-item" href="#">中文</a></li>
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">Français</a></li>
+                      <li><a class="dropdown-item" href="#">Русский</a></li>
+                      <li><a class="dropdown-item" href="#">Español</a></li>
+                    </ul>
+                  </div>&nbsp;
+                  <a href="#" class="d-inline-block text-success" role="button">FAQ</a>&nbsp;
+                  <a href="#" class="d-inline-block text-success" role="button">Login</a>
+                </div> <!-- end .utilities -->
+
+            </div> <!-- end .row -->
+          </header>
+          
+        </div> <!-- end .col-md-12 -->
+      </div> <!-- end .row -->
+
+<!-- =globalnav
+   ___ _       _           _                   
+  / _ \ | ___ | |__   __ _| |_ __   __ ___   __
+ / /_\/ |/ _ \| '_ \ / _` | | '_ \ / _` \ \ / /
+/ /_\\| | (_) | |_) | (_| | | | | | (_| |\ V / 
+\____/|_|\___/|_.__/ \__,_|_|_| |_|\__,_| \_/  
+
+Nota bene: For =nested =drop-down =menus, see here: https://bootstrap-menu.com/detail-multilevel.html
+
+-->
+
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark shadow" aria-label="Global navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Standards</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="commission-dd" data-bs-toggle="dropdown" aria-current="page" aria-expanded="false">Commission</a>
+            <ul class="dropdown-menu" aria-labelledby="commission-dd">
+              <li><a class="dropdown-item" href="#">The Commission on Phytosanitary Measures</a></li>
+              <li><a class="dropdown-item" href="#">CPM-16</a></li>
+              <li><a class="dropdown-item" href="#">Another page</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Committees</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Countries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Core Activites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Consultations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News &amp; Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- =breadcrumbs
+   ___                    _                           _         
+  / __\_ __ ___  __ _  __| | ___ _ __ _   _ _ __ ___ | |__  ___ 
+ /__\// '__/ _ \/ _` |/ _` |/ __| '__| | | | '_ ` _ \| '_ \/ __|
+/ \/  \ | |  __/ (_| | (_| | (__| |  | |_| | | | | | | |_) \__ \
+\_____/_|  \___|\__,_|\__,_|\___|_|   \__,_|_| |_| |_|_.__/|___/
+                                                                
+-->
+          
+          <div class="row">
+            <div class="col-md-auto">
+              <p class="breadcrumbs"><a href="../../index.html">Home</a> &rarr; Resources</p>
+            </div>
+          </div>
+      
+<!-- =content
+   ___            _             _   
+  / __\___  _ __ | |_ ___ _ __ | |_ 
+ / /  / _ \| '_ \| __/ _ \ '_ \| __|
+/ /__| (_) | | | | ||  __/ | | | |_ 
+\____/\___/|_| |_|\__\___|_| |_|\__|
+
+ -->
+
+      <div class="row">
+        <div class="col-md-7">
+          
+          <h1>Resources</h1>
+          
+          <p>Praesent purus risus, auctor id nisi non, facilisis ullamcorper tellus. Suspendisse lobortis ut leo vitae tincidunt. Aenean a <a href="#">massa magna</a>. Integer in dui sit amet augue facilisis suscipit eu ut nibh.</p> 
+          <p>Quisque laoreet justo nec eros porta, a <a href="#">fermentum lacus</a> porta. Pellentesque ultrices leo ac finibus iaculis. Curabitur fringilla purus vitae porta viverra. Sed eleifend ipsum efficitur pulvinar gravida. Phasellus ornare interdum laoreet.</p>
+          <p>Aenean pulvinar neque vel tincidunt vestibulum. Nunc luctus eros ac massa facilisis maximus. Integer malesuada turpis sed placerat. Aenean pulvinar sagittis varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc mauris erat, convallis sed odio eget, <a href="#">pretium euismod nisi</a>.</p>
+
+          <h2>Resource Categories</h2>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>📚 <a href="#">All publications</a></li>
+                <li>📊 <a href="#">Annual Reports & Strategies</a></li>
+                <li>📝 <a href="#">Meeting Reports</a></li>
+                <li>📘 <a href="#">Brochures</a></li>
+                <li>📄 <a href="#">Factsheets</a></li>
+                <li>📗 <a href="#">Advocacy materials</a></li>
+                <li>📔 <a href="#">Guides & Training materials</a></li>
+                <li>📓 <a href="#">Studies</a></li>
+              </ul>
+            </div> <!-- end .col-md-6 -->
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>📸 <a href="#">Photos</a></li>
+                <li>🎥 <a href="#">Videos</a></li>
+                <li>👾 <a href="#">Social Media</a></li>
+                <li>📽 <a href="#">FAO Webcasts</a></li>
+                <li>📒 <a href="#">Phytosanitary Capacity Evaluation (PCE)</a></li>
+                <li>💬 <a href="#">IPPC Online Comment System (OCS)</a></li>
+                <li>🔭 <a href="#">Beyond Compliance Tools</a></li>
+                <li>💻 <a href="#">E-Learning </a></li>
+              </ul>
+            </div> <!-- end .col-md-6 -->
+          </div> <!-- end .row -->
+          
+          <h3>Resource Category Title</h3>
+          
+          <p class="mark">Work in progress… Panels will go here.</p>
+          
+          
+        </div> <!-- end .col-md-7 -->
+        
+<!-- =sidebar
+ __ _     _      _                
+/ _(_) __| | ___| |__   __ _ _ __ 
+\ \| |/ _` |/ _ \ '_ \ / _` | '__|
+_\ \ | (_| |  __/ |_) | (_| | |   
+\__/_|\__,_|\___|_.__/ \__,_|_|   
+
+ -->
+
+        <div class="col-md-5" id="sidebar">
+          
+          <img class="mb-0" id="image" class="sidebar-featured-img img-fluid" src="../img/sidebar-img-resources.gif" alt="Page from Shi Zhu Zhai, Qing dynasty (1644–1911), Kangxi period (1662–1722)." width="400">
+          <!-- =nb =sidebarimg: Sidebar images should be at least 600px wide. -->
+          <hr class="mt-0 mb-2 pt-0"> <!-- =nb: Use a horizontal rule when the image is transparent and does not have defined edges. -->
+          <p>
+            <em>Page from Shi Zhu Zhai, Qing dynasty  (1644–1911), Kangxi period (1662–1722),  Rogers Fund, 1924, Met Museum.</em>
+          </p>
+          
+        </div>  <!-- end .col-md-5 sidebar -->
+      </div> <!-- end .row -->
+
+
+<!-- =footer
+   ___           _
+  / __\__   ___ | |_ ___ _ __
+ / _\/ _ \ / _ \| __/ _ \ '__|
+/ / | (_) | (_) | ||  __/ |
+\/   \___/ \___/ \__\___|_|
+
+ -->
+
+      <div class="row" id="footer">
+        <div class="col-sm-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">Newsletter</h5>
+              <p class="card-text">Subscribe to receive the latest <a href="#">news</a> from the IPPC in your inbox.</p>
+              <a href="#" class="btn btn-primary">Subscribe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#top" class="text-decoration-none">↑ <span style="color:var(--bs-dark);">Back To Top</span></a></h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none">Contact</a></li>
+                <li><a href="#" class="text-decoration-none">FAQ</a> &amp; <a href="#" class="text-decoration-none">Sitemap</a></li>
+                <li><a href="#" class="text-decoration-none">Copyright & Legal</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">IPPC Socials</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none">Twitter</a></li>
+                <li><a href="#" class="text-decoration-none">LinkedIn</a></li>
+                <li><a href="#" class="text-decoration-none">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>    
+        
+        <div class="position-relative"> 
+          <div class="card logo-bottom shadow-sm border-0">
+            <div class="card-body">
+              <a href="#"><img src="../img/IPPC_logo_Green_3lines_en.svg" alt="IPPC" style="max-width:225px;"></a>
+            </div>
+          </div>
+        </div> <!-- end .position-relative -->
+        
+      </div> <!-- end .row -->
+      
+    </div> <!-- end .container -->
+    
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>

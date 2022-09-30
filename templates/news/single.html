@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="none">
+
+    <title>News Item Title - News - Templates - IPPC</title>
+    
+    <!-- Inter Typeface. We can host it ourselves (maybe preferred) or have Google host it (current implementation) =typeface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IPPC Theme -->
+    <link href="../css/ippc.css" rel="stylesheet">
+
+  </head>
+
+<!-- =body (ASCII art is the “Ogre” font at https://patorjk.com/software/taag/#p=display&f=Ogre)
+   ___           _       
+  / __\ ___   __| |_   _ 
+ /__\/// _ \ / _` | | | |
+/ \/  \ (_) | (_| | |_| |
+\_____/\___/ \__,_|\__, |
+                   |___/ 
+-->
+
+  <body id="news">
+    <a id="top"></a>
+    <div class="crumbs">
+      <p>
+        <a href="../../index.html">IPPC Design Docs 2022–2022</a> &rarr; <a href="../">HTML &amp; CSS Templates</a> &rarr; <a href="../news/index.html">News</a> - News Item Title
+        &nbsp;&nbsp;&nbsp;<em style="float:right;">Updated on 2022-05-29</em>
+      </p>
+    </div>
+    
+<!-- =header
+                      _           
+  /\  /\___  __ _  __| | ___ _ __ 
+ / /_/ / _ \/ _` |/ _` |/ _ \ '__|
+/ __  /  __/ (_| | (_| |  __/ |   
+\/ /_/ \___|\__,_|\__,_|\___|_|   
+
+-->
+    
+    <div class="container maincontainer shadow">
+      <div class="row">
+        <div class="col-md-12">
+          
+          <header>
+            <div class="row">
+              <div class="col-md-12">
+                <a href="#"><img id="faologo" src="../img/FAO_logo_Blue_3lines_en.svg" alt="FAO" class="d-inline-block"></a>
+                
+                <a href="#"><img id="ippclogo" src="../img/IPPC_logo_Green_3lines_en.svg" alt="IPPC" class="d-inline-block"></a>
+                
+                <form class="form-inline d-inline-block" id="searchform">
+                  <div class="form-row">
+                    <input class="form-control d-inline-block w-auto" type="text" placeholder="Search" aria-label="Search">
+                    <!-- <button class="btn btn-primary d-inline-block w-auto" type="submit">Go</button> -->
+                    <button class="btn btn-success d-inline-block w-auto"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="display: inline-block; vertical-align: middle;"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg></button>
+                  </div>
+                </form>
+                
+                <div class="utilities d-inline-block"> <!-- d-flex justify-content-end -->
+                  <div class="dropdown d-inline">
+                    <a class="btn btn-outline-success btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">العربية</a></li>
+                      <li><a class="dropdown-item" href="#">中文</a></li>
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">Français</a></li>
+                      <li><a class="dropdown-item" href="#">Русский</a></li>
+                      <li><a class="dropdown-item" href="#">Español</a></li>
+                    </ul>
+                  </div>&nbsp;
+                  <a href="#" class="d-inline-block text-success" role="button">FAQ</a>&nbsp;
+                  <a href="#" class="d-inline-block text-success" role="button">Login</a>
+                </div> <!-- end .utilities -->
+
+            </div> <!-- end .row -->
+          </header>
+          
+        </div> <!-- end .col-md-12 -->
+      </div> <!-- end .row -->
+
+<!-- =globalnav
+   ___ _       _           _                   
+  / _ \ | ___ | |__   __ _| |_ __   __ ___   __
+ / /_\/ |/ _ \| '_ \ / _` | | '_ \ / _` \ \ / /
+/ /_\\| | (_) | |_) | (_| | | | | | (_| |\ V / 
+\____/|_|\___/|_.__/ \__,_|_|_| |_|\__,_| \_/  
+
+Nota bene: For =nested =drop-down =menus, see here: https://bootstrap-menu.com/detail-multilevel.html
+
+-->
+
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark shadow" aria-label="Global navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Standards</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="commission-dd" data-bs-toggle="dropdown" aria-current="page" aria-expanded="false">Commission</a>
+            <ul class="dropdown-menu" aria-labelledby="commission-dd">
+              <li><a class="dropdown-item" href="#">The Commission on Phytosanitary Measures</a></li>
+              <li><a class="dropdown-item" href="#">CPM-16</a></li>
+              <li><a class="dropdown-item" href="#">Another page</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Committees</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Countries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Core Activites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Consultations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">News &amp; Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- =breadcrumbs
+   ___                    _                           _         
+  / __\_ __ ___  __ _  __| | ___ _ __ _   _ _ __ ___ | |__  ___ 
+ /__\// '__/ _ \/ _` |/ _` |/ __| '__| | | | '_ ` _ \| '_ \/ __|
+/ \/  \ | |  __/ (_| | (_| | (__| |  | |_| | | | | | | |_) \__ \
+\_____/_|  \___|\__,_|\__,_|\___|_|   \__,_|_| |_| |_|_.__/|___/
+                                                                
+-->
+          
+          <div class="row">
+            <div class="col-md-auto">
+              <p class="breadcrumbs"><a href="../../index.html">Home</a> &rarr; <a href="../news/index.html">News</a> - News Item Title</p>
+            </div>
+          </div>
+      
+<!-- =content
+   ___            _             _   
+  / __\___  _ __ | |_ ___ _ __ | |_ 
+ / /  / _ \| '_ \| __/ _ \ '_ \| __|
+/ /__| (_) | | | | ||  __/ | | | |_ 
+\____/\___/|_| |_|\__\___|_| |_|\__|
+
+ -->
+
+      <div class="row">
+        <div class="col-md-7">
+          
+          <h1>News Item Title</h1>
+          
+          <img class="rounded img-fluid" width="100%" height="250" alt="A photograph illustrating the news item." src="../img/news-photo.jpg">
+          <p class="mt-1 text-end"><em>Photo©FAO/Sergey Kozmin</em></p>
+          
+          <p class="text-uppercase"><a href="#" title="Permanent link to this news item." class="text-dark text-decoration-none">Rome, 22 September 2021 🌱</a></p>
+          
+          <p>Cat ipsum dolor sit amet, ignore the human until she needs to get up, then climb on her lap and sprawl. Run around the house at 4 in the morning. Sniff catnip and act crazy meowzer, climb into cupboard and lick the salt off rice cakes found somthing move i bite it tail so a nice warm laptop for me to sit on yet purr purr purr until owner pets why owner not pet me hiss scratch meow. Sleep intrigued by the shower kitty time so hide from <a href="#">vacuum cleaner</a> for that box? i can fit in that box. Eat half my food and ask for more ha ha, you're funny i'll kill you last, so sleep everywhere, but not in my bed scratch the box purr like an angel and mesmerizing birds and sun bathe. Cattt catt cattty cat being a cat. Blow up sofa in 3 seconds spend all night ensuring people don't sleep sleep all day scratch so owner bleeds pelt around the house and up and down stairs chasing phantoms. Steal mom's crouton while she is in the bathroom plan your travel shake treat bag scratch.</p>
+
+          <p>Sleep over your phone and make cute snoring noises growl at dogs in my sleep scratch. Meowzer always hungry. Jump on counter removed by human jump on counter again removed by human meow before jumping on counter this time to let the human know am coming back. Fooled again thinking the dog likes me be superior, for play riveting piece on synthesizer keyboard. Cat cat moo moo lick ears lick paws annoy owner until he gives you food <a href="#">say meow repeatedly</a> until belly rubs, feels good but sleep everywhere, but not in my bed purr like a car engine oh yes, there is my human slave woman she does best pats ever that all i like about her hiss meow yet check cat door for ambush 10 times before coming in. Ignore the squirrels, you'll never catch them anyway run up and down stairs and show belly. Pet my belly, you know you want to; seize the hand and shred it! be a nyan cat, feel great about it, be annoying 24/7 poop rainbows in litter box all day and throwup on your pillow annoy the old grumpy cat, start a fight and then retreat to wash when i lose. Meow loudly just to annoy owners cat sit like bread but lick butt, for i do no work yet get food, shelter, and lots of stuff just like man who lives with us and caticus cuteicus and lick arm hair. Meow and walk away massacre a bird in the living room and then look like the cutest and most innocent animal on the planet crusty butthole. Spend all night ensuring people don't sleep sleep all day eat half my food and ask for more loves cheeseburgers or mesmerizing birds so i want to go outside let me go outside nevermind inside is better, yet pretend not to be evil. Take a deep sniff of sock then walk around with mouth half open make plans to dominate world and then take a nap.</p>
+
+          <p>Scratch me now! stop scratching me!. Throwup on your pillow bird bird bird bird bird bird human why take bird out i could have eaten that so plays league of legends so step on your keyboard while you're gaming and then turn in a circle meow meow check cat door for ambush 10 times before coming in. Eat my own ears. Run at 3am show belly eat grass, throw it back up or purr when being pet for rub face on everything. Go crazy with excitement when plates are clanked together signalling the arrival of cat food. Put toy mouse in food bowl run out of litter box at full speed purr like an angel waffles but man running from cops stops to pet cats, goes to jail or stand in doorway, unwilling to chose whether to stay in or go out purr like an angel. If it fits, i sits see owner, run in terror so chew iPad power cord rub my belly hiss but stare at wall turn and meow stare at wall some more meow again continue staring yet i love cats i am one wake up scratch humans leg for food then purr then i have a and <a href="#">relax</a> or loved it, hated it, loved it, hated it. Bite off human's toes chew iPad power cord. Find a way to fit in tiny box i is not fat, i is fluffy stand with legs in litter box, but poop outside and jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans.</p>
+
+          <p>Lick the other cats avoid the new toy and just play with the box it came in for bird bird bird bird bird bird human why take bird out i could have eaten that and bite the neighbor's bratty kid try to jump onto window and fall while scratching at wall or has closed eyes but still sees you so sit in window and stare oooh, a bird, yum. Humans,humans, humans oh how much they love us felines we are the center of attention they feed, they clean licks your face where is it? i saw that bird i need to bring it home to mommy squirrel! but lasers are tiny mice. This human feeds me, i should be a god roll over and sun my belly meow meow you are my owner so here is a dead rat yet howl on top of tall thing this is the day . Meow in empty rooms cough furball into food bowl then scratch owner for a new one or stretch out on bed spend six hours per day washing, but still have a crusty butthole. Meow all night having their mate disturbing sleeping humans. Sleep hunt anything that moves prow?? ew dog you drink from the toilet, yum yum warm milk hotter pls, ouch too hot find empty spot in cupboard and sleep all day cat is love, cat is life. Crusty butthole. Pee in human's bed until he cleans the litter box poop in the plant pot. Mesmerizing birds meowzer pooping rainbow while flying in a toasted bread costume in space so knock dish off table head butt cant eat out of my own dish for claws in the eye of the beholder so stinky cat at four in the morning wake up owner meeeeeeooww scratch at legs and beg for food then cry and yowl until they wake up at two pm jump on window and sleep while observing the bootyful cat next door that u really like but who <a href="#">already has a boyfriend</a> end up making babies with her and let her move in. Catch eat throw up catch eat throw up bad birds make muffins attack curtains, or plop down in the middle where everybody walks but throw down all the stuff in the kitchen. Stare at owner accusingly then wink eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap.</p>
+
+          <p>Scream at teh bath murf pratt ungow ungow. As lick i the shoes if it fits, i sits, but waffles lick butt and make a weird face. Stare out cat door then go back inside. Meow meow adventure always sniff sniff litter box is life tuxedo cats always looking dapper, the fat cat sat on the mat bat away with paws. Sleep on keyboard thug cat , and nya nya nyan. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff when owners are asleep, cry for no apparent reason brown cats with pink ears cat ass trophy claw at curtains stretch and yawn nibble on tuna ignore human bite human hand demand to have some of whatever the human is cooking, then sniff the offering and walk away. Make muffins cat not kitten around for scratch just going to dip my paw in your coffee and do a taste test - oh never mind i forgot i don't like coffee - you can have that back now, yet lie on your belly and purr when you are asleep. Hide when guests come over cat fur is the new black bite off human's toes and where is it? i saw that bird i need to bring it home to mommy squirrel! throw down all the stuff in the kitchen kitty. Ask to be pet then attack owners hand i want to go outside let me go outside nevermind inside is better, bathe private parts with tongue then lick owner's face jumps off balcony gives owner dead mouse at present then poops in litter box <a href="#">snatches yarn</a> and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water milk the cow.</p>
+          
+          <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path></svg> <a href="#" class="mr-2">Prior Article Title</a> <span class="m-2">❦</span> <a href="#" class="ml-2">Next Article Title</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M8.22 2.97a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06l2.97-2.97H3.75a.75.75 0 010-1.5h7.44L8.22 4.03a.75.75 0 010-1.06z"></path></svg></p>
+          
+          
+        </div> <!-- end .col-md-7 -->
+        
+<!-- =sidebar
+ __ _     _      _                
+/ _(_) __| | ___| |__   __ _ _ __ 
+\ \| |/ _` |/ _ \ '_ \ / _` | '__|
+_\ \ | (_| |  __/ |_) | (_| | |   
+\__/_|\__,_|\___|_.__/ \__,_|_|   
+
+ -->
+
+        <div class="col-md-5 mt-2" id="sidebar">
+          <div class="card bg-light shadow-sm mb-3 mt-5 p-1">
+            <div class="card-body">
+              <h5 class="card-title">Share On Socials</h5>
+              <p class="card-text">
+                <a href="#">Twitter</a>&nbsp;&nbsp;
+                <a href="#">LinkedIn</a>&nbsp;&nbsp;
+                <a href="#">Facebook</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card bg-light shadow-sm mb-3 p-1">
+            <div class="card-body">
+              <h5 class="card-title">Newsletter</h5>
+              <p class="card-text">Subscribe to receive the latest <a href="#">news</a> from the IPPC in your personal email software’s inbox.</p>
+              <form class="form-inline d-inline-block" id="subscribeform">
+                <div class="form-row">
+                  <input class="form-control d-inline-block" type="text" placeholder="Your email" aria-label="Your email" style="width:60%;">
+                  <button class="btn btn-primary d-inline-block w-auto">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <h4>NEWS ARCHIVE <small>🌱 <a href="#" style="font-weight:normal;">See all</a></small></h4>
+          <ul class="list-unstyled">
+            <li><a href="#">September 2022</a></li>
+            <li><a href="#">February 2022</a></li>
+            <li><a href="#">December 2021</a></li>
+            <li><a href="#">November 2021</a></li>
+            <li><a href="#">September 2021</a></li>
+            <li><a href="#">August 2021</a></li>
+            <li><a href="#">July 2021</a></li>
+            <li><a href="#">June 2021</a></li>
+            <li><a href="#">May 2021</a></li>
+            <li><a href="#">April 2021</a></li>
+            <li><a href="#">March 2021</a></li>
+            <li><a href="#">February 2021</a></li>
+            <li><a href="#">January 2021</a></li>
+            <li><a href="#">December 2020</a></li>
+            <li><a href="#">November 2020</a></li>
+            <li><a href="#">October 2020</a></li>
+            <li><a href="#">September 2020</a></li>
+            <li><a href="#">August 2020</a></li>
+            <li><a href="#">July 2020</a></li>
+            <li><a href="#">June 2020</a></li>
+            <li><a href="#">May 2020</a></li>
+            <li><a href="#">April 2020</a></li>
+            <li><a href="#">March 2020</a></li>
+            <li><a href="#">February 2020</a></li>
+            <li><a href="#">January 2020</a></li>
+            <li><a href="#">December 2019</a></li>
+            <li><a href="#">November 2019</a></li>
+            <li><a href="#">October 2019</a></li>
+            <li><a href="#">September 2019</a></li>
+            <li><a href="#">August 2019</a></li>
+            <li><a href="#">July 2019</a></li>
+            <li><a href="#">June 2019</a></li>
+            <li><a href="#">May 2019</a></li>
+            <li><a href="#">April 2019</a></li>
+            <li><a href="#">March 2019</a></li>
+            <li><a href="#">February 2019</a></li>
+            <li><a href="#">January 2019</a></li>
+          </ul>
+          
+          <p>🌱 <a href="#">Entire News Archive</a></p>
+
+        </div>  <!-- end .col-md-5 sidebar -->
+      </div> <!-- end .row -->
+
+
+<!-- =footer
+   ___           _
+  / __\__   ___ | |_ ___ _ __
+ / _\/ _ \ / _ \| __/ _ \ '__|
+/ / | (_) | (_) | ||  __/ |
+\/   \___/ \___/ \__\___|_|
+
+ -->
+
+      <div class="row" id="footer">
+        <div class="col-sm-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">Newsletter</h5>
+              <p class="card-text">Subscribe to receive the latest <a href="#">news</a> from the IPPC in your inbox.</p>
+              <a href="#" class="btn btn-primary">Subscribe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#top" class="text-decoration-none">↑ <span style="color:var(--bs-dark);">Back To Top</span></a></h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none">Contact</a></li>
+                <li><a href="#" class="text-decoration-none">FAQ</a> &amp; <a href="#" class="text-decoration-none">Sitemap</a></li>
+                <li><a href="#" class="text-decoration-none">Copyright & Legal</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">IPPC Socials</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none">Twitter</a></li>
+                <li><a href="#" class="text-decoration-none">LinkedIn</a></li>
+                <li><a href="#" class="text-decoration-none">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>    
+        
+        <div class="position-relative"> 
+          <div class="card logo-bottom shadow-sm border-0">
+            <div class="card-body">
+              <a href="#"><img src="../img/IPPC_logo_Green_3lines_en.svg" alt="IPPC" style="max-width:225px;"></a>
+            </div>
+          </div>
+        </div> <!-- end .position-relative -->
+        
+      </div> <!-- end .row -->
+      
+    </div> <!-- end .container -->
+    
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>
