@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta robots="none" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ippc/work/templates.css" type="text/css" media="screen" />
+  <title>Theme Switcher - IPPC Design Docs 2021–2022</title>
+</head>
+
+<body>
+  <a id="switch" title="Toggle webpage lights.">☼ ☾</a>
+
+  <p class="crumbs"><a href="../index.html">IPPC Design Docs 2021–2022</a> &rarr; Theme Switcher</p>
+
+  <h1>Theme Switcher</h1>
+
+  <p>A CSS theme switcher to help <strong>reduce eyestrain in different lighting conditions</strong>, such as changing colors to <strong>light text on a dark background</strong> at night.</p>  
+  <p>You can try it here by clicking on the sun and moon ☼ ☾ icons on the top-right of the page.</p>
+  <p>The visitor’s preference is saved with web browsers’ <strong>localStorage</strong> instead of cookies to help avoid needing “Accept Cookies” popups.</p>
+  
+  <ol>
+    <li>
+      Put <strong>data-theme="light"</strong> in your &lt;html&gt; tag:<br>
+<textarea readonly style="width:50%; max-width:100%; min-height:1rem; font-size:16px; padding:10px;">
+<html data-theme="light" lang="en">
+</textarea>
+    </li>
+    <li>
+      Set <strong>theme colors</strong> as variables in your linked <a href="/ippc/work/templates.css">stylesheet.css</a></strong> (<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/ippc/work/templates.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot; /&gt;</code>):<br>
+<textarea readonly style="width:50%; max-width:100%; min-height:30rem; font-size:16px; padding:10px;">
+html[data-theme='light']{  
+  --bg: rgba(221,221,221,1);
+  --color-link: #1976d2;
+  --color-text: #111;
+  --textarea-bg: #fafafa;
+  --textarea-text: #111;
+  --code-bg:#fafafa;
+  --code-text: #111;
+}
+
+html[data-theme='dark'] {
+  --bg: rgba(51,51,51,1);
+  --color-link: #81d4fa;
+  --color-text: #eee;
+  --textarea-bg: #252525;
+  --textarea-text: #eee;
+  --code-bg:#252525;
+  --code-text: #fafafa;
+}
+
+body {background-color: var(--bg); color: var(--color-text);}
+a {color: var(--color-link); text-decoration:none;}
+textarea {background: var(--textarea-bg); color: var(--textarea-text);}
+code {background: var(--code-bg); color: var(--code-text);}
+</textarea>
+    </li>
+    <li>
+      Add a <strong>toggle link</strong> to the HTML (see the <a href="#switch">top-right</a> of this webpage):<br>
+<textarea readonly style="width:50%; max-width:100%; min-height:1rem; font-size:16px; padding:10px;">
+<a id="switch" title="Toggle webpage lights.">☼ ☾</a>
+</textarea>
+    </li>
+    <li>
+      Link to the following <a href="/ippc/work/scripts.js">theme switcher JavaScript code</a> before the closing <code>&lt;/body&gt;</code> tag of the webpage (<code>&lt;script src=&quot;/ippc/work/scripts.js&quot;&gt;&lt;/script&gt;  
+&lt;/body&gt;</code>):<br>
+<textarea readonly style="width:50%; max-width:100%; min-height:36rem; font-size:16px; padding:10px;">
+// Thank you, Phina Kersly: https://www.section.io/engineering-education/adding-dark-theme-to-your-site/
+
+let theme = localStorage.getItem('data-theme');
+const lightswitch = document.getElementById("switch");
+const changeThemeToDark = () =>{
+    document.documentElement.setAttribute("data-theme", "dark")
+    localStorage.setItem("data-theme", "dark")
+    console.log("Dark theme set")
+    }
+
+const changeThemeToLight = () =>{
+    document.documentElement.setAttribute("data-theme", "light")
+    localStorage.setItem("data-theme", 'light')
+    console.log("Light theme set")
+    }
+
+if(theme === 'dark'){
+    changeThemeToDark()
+    }
+  
+lightswitch.addEventListener('click', ()=> {
+    let theme = localStorage.getItem('data-theme');
+    if (theme ==='dark'){
+        changeThemeToLight()
+    }else{
+        changeThemeToDark()
+    }   
+});
+</textarea>
+    </li>
+  </ol>
+  <p>Done! See it working by clicking the <a href="#switch">☼ ☾ icons on the top-right of the page</a>.</p>
+  <hr>
+  <p>
+    <em>Updated on 2022-04-08</em>
+  </p>
+  <script src="/ippc/work/scripts.js"></script>  
+</body>
+</html>
